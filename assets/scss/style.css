@@ -1,0 +1,26 @@
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-nav .slider-nav-items {
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.slider-nav .slider-nav-items p {
+  margin: 0;
+  padding: 15px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}/*# sourceMappingURL=style.css.map */
