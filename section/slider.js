@@ -5,28 +5,51 @@ class Slider extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-          <div class="slider-container">
-          <div class="logo-container">
-              <img src="assets/images/logo.min.svg" alt="Parts in Motion">
+      <div class="bg-blue">
+      <div class="container">
+        <div class="row py-2 align-items-center">
+          <div class="col">
+            <div class="pointer-shape">
+              <a class="pointer-shape-text" data-slide-index="1" href="">
+                Use the reg finder to find <br />
+                correct parts for your car
+              </a>
+              <div class="pointer-shape-arrow"></div>
+            </div>
           </div>
-  
-          <div class="search-login-container">
-              <div class="search-container">
-                  <input type="text" class="search-input">
-                  <span class="material-symbols-outlined search-icon">search</span>
+
+          <div class="col">
+            <div class="reg-field">
+              <div class="px-2 py-1">
+                <img src="assets/images/UK-flag.svg" alt="ek flag" />
+                <span>GB</span>
               </div>
-              <div class="login-container">
-                  <span class="material-symbols-outlined login-icon">account_circle</span>
-                  <span class="login-text">Register</span>
-                  <span class="login-text">/login</span>
-              </div>
-              <div class="vertical-line"></div>
-              <div class="cart-container">
-                  <span class="material-symbols-outlined login-icon">shopping_cart</span>
-                  <span class="price-text">£12.00</span>
-              </div>
+              <input
+                type="password"
+                class="inputField w-100"
+                placeholder="Enter reg here"
+              />
+              <button type="submit" class="px-4">GO</button>
+            </div>
           </div>
+          <div class="col-6 d-flex justify-content-between align-items-center">
+            <div class="pointer-shape">
+              <a class="pointer-shape-text" data-slide-index="1" href="">
+                Or enter <br />
+                car details
+              </a>
+              <div class="pointer-shape-arrow"></div>
+            </div>
+            <input class="car-details" placeholder="Make" />
+            <input class="car-details" placeholder="Model" />
+            <input class="car-details" placeholder="Engine" />
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="banner">
+      <img src="assets/images/reg finder.png" alt="reg finder poster" />
+    </div>
         `;
     }
   }

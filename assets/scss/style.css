@@ -23,4 +23,83 @@
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+.bg-blue {
+  background-color: #009fe3;
+}
+
+.pointer-shape {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 0;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+}
+.pointer-shape .pointer-shape-text {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 13px;
+  flex: 1;
+  padding: 10px 0 10px 10px;
+  text-align: center;
+  flex: none;
+}
+.pointer-shape .pointer-shape-arrow {
+  position: relative;
+  left: 7px;
+  border: solid #FFF;
+  display: inline-block;
+  padding: 16px;
+  border-width: 0 1px 1px 0;
+  transform: translateY(15.5px) rotate(-45deg) skew(-15deg, -15deg) translateX(18px);
+}
+
+.reg-field {
+  display: flex;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+.reg-field div:first-child {
+  border-radius: 5px 0 0 5px;
+  background-color: #004994;
+}
+.reg-field div:first-child span {
+  color: #FFF;
+}
+.reg-field input {
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 4px;
+}
+.reg-field button {
+  border: none;
+  font-weight: 700;
+  border-radius: 0 5px 5px 0;
+  background-color: #f59b0c;
+}
+
+input.car-details {
+  max-width: 120px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.banner {
+  border-top: 2px solid #FFF;
+  text-align: center;
+  min-height: 330px;
+  background-image: url(../images/banner-bg.png);
 }/*# sourceMappingURL=style.css.map */
