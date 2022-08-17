@@ -107,9 +107,5 @@ $('#carEngine').select2({
     dropdownCssClass: "car-dropdown",
 });
 
-$(function(){
-    $("#sideMenu").load('section/side-menu.html');
-    $("#mainContainer").load('section/home.html');
-});
 
 
