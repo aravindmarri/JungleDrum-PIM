@@ -254,7 +254,7 @@ class Header extends HTMLElement {
                       </span>
                   </div>
                   <div class="right-container">
-                      <img src="../assets/images/uk_flag.png" alt="UK Flag">
+                      <img src="assets/images/uk_flag.png" alt="UK Flag">
                       <span class="logo-text">Proud to be a UK-based company</span>
                       <div class="contact-container">
                           <span class="material-symbols-outlined contact-logo">contact_support</span>
