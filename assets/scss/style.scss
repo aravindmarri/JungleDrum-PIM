@@ -281,12 +281,50 @@ input.car-details:-ms-input-placeholder {
         background-color: colours.$footer-black-1;
         color: white;
         padding: 15px;
+    }
+    .footer-bottom-container{
+        background-color: colours.$footer-black-2;
+        color: white;
+        padding: 25px;
         @media (max-width: 600px) {
-            background-color: colours.$footer-black-mobile-1;
+            .tec-logo{
+                max-width: 70%;
+                text-align: center;
+            }
+        }
+        .heading{
+            font-size: 15px;
+            margin-bottom: 8px;
+            @media (max-width: 600px) {
+                margin-bottom: 25px !important;
+            }
+        }
+        .information{
+            margin-bottom: 25px;
+        }
+        .chat-container{
+            padding-bottom: 28px;
+            border-bottom: 1px solid;
+        }
+        .footer-container{
+            border-bottom: 1px solid;
+            padding-bottom: 25px;
+            @media (max-width: 600px) {
+                flex-direction: column !important;
+                .links-container{
+                    margin-bottom: 45px;
+                }
+            }
+        }
+        .tec-logo{
+            max-width: 100%;
+        }
+        .mail{
+            text-decoration: none;
+            color: colours.$white;
         }
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .pointer-shape {
@@ -303,12 +341,15 @@ input.car-details:-ms-input-placeholder {
     }
 
     .select,
-    .select2 {
-        display: none;
+    .select2, .footer-small-img{
+        display: none !important;
     }
 
-    .footer-small-img{
-        display: none;
+    .secure-payment-container, .about-container{
+        display: none !important;
+    }
+    .links-container, .question-container{
+        width: 100% !important;
     }
 
 }
