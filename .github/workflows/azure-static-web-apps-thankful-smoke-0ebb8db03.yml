@@ -31,7 +31,23 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-
+  HTMLCHECK:
+    runs-on: ubuntu-latest
+    name: Html Validation Job
+    steps:
+    - run: lsb_release -a
+    - run: uname -a
+    - uses: actions/checkout@v3
+    - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action@master
+      with:
+          root: /
+          log_level: INFO
+          css: true
+    - uses: actions/upload-artifact@v3
+      with:
+          name: log
+          path: log.log
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
