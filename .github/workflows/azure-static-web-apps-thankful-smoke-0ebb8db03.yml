@@ -38,6 +38,7 @@ jobs:
         with:
           # Path of the files to test
           css: true
+          root: /
           
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
