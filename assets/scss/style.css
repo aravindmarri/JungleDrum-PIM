@@ -198,6 +198,91 @@ input.car-details:-ms-input-placeholder {
   padding: 3px 0;
 }
 
+@media (max-width: 600px) {
+  #sideMenu {
+    display: none;
+  }
+}
+
+.footer-blue-container {
+  background-color: #009fe3;
+  color: #fff;
+  padding: 15px;
+}
+
+.footer .footer-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .footer-sub-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .footer .footer-sub-heading {
+    width: 50%;
+  }
+}
+.footer .input-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 4px auto;
+}
+@media (max-width: 600px) {
+  .footer .input-container {
+    flex-direction: column !important;
+  }
+}
+.footer .input-container .footer-input {
+  border: none;
+  height: 32px;
+  max-width: 225px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .footer .input-container .footer-input {
+    max-width: 100% !important;
+    margin-bottom: 8px;
+  }
+}
+.footer .input-container .footer-button {
+  max-width: 225px;
+  width: 100%;
+  background-color: #fa9705;
+  border: 1px solid;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .footer .input-container .footer-button {
+    max-width: 100%;
+  }
+}
+.footer .footer-img {
+  display: none;
+}
+@media (max-width: 600px) {
+  .footer .footer-img {
+    display: block;
+  }
+}
+.footer .footer-light-black-container {
+  background-color: #364950;
+  color: white;
+  padding: 15px;
+}
+@media (max-width: 600px) {
+  .footer .footer-light-black-container {
+    background-color: #879097;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .pointer-shape {
     border: none;
@@ -211,6 +296,9 @@ input.car-details:-ms-input-placeholder {
   }
   .select,
 .select2 {
+    display: none;
+  }
+  .footer-small-img {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
