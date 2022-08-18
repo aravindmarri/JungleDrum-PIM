@@ -1,6 +1,7 @@
 @use "colours";
-body{
-    font-family:'Readex Pro', sans-serif;
+
+body {
+    font-family: 'Readex Pro', sans-serif;
     font-size: 13px;
     margin: 0;
 }
@@ -54,6 +55,7 @@ body{
         padding: 10px 0 10px 10px;
         text-align: center;
         flex: none;
+        max-width: 160px;
     }
 
     .pointer-shape-arrow {
@@ -64,6 +66,12 @@ body{
         padding: 16px;
         border-width: 0 1px 1px 0;
         transform: translateY(15.5px) rotate(-45deg) skew(-15deg, -15deg) translateX(18px);
+    }
+}
+
+.car-details {
+    .pointer-shape-text {
+        max-width: 70px;
     }
 }
 
@@ -89,12 +97,15 @@ body{
         padding: 4px;
         background-color: #fae201;
     }
+
     input::-webkit-input-placeholder {
         color: black;
     }
+
     input:-moz-placeholder {
         color: black;
     }
+
     input:-ms-input-placeholder {
         color: black;
     }
@@ -123,9 +134,11 @@ input.car-details {
 input.car-details::-webkit-input-placeholder {
     color: black;
 }
+
 input.car-details:-moz-placeholder {
     color: black;
 }
+
 input.car-details:-ms-input-placeholder {
     color: black;
 }
@@ -144,6 +157,7 @@ input.car-details:-ms-input-placeholder {
     font-weight: 700;
     font-size: 20px;
     border-radius: 5px;
+
     .select2-selection__arrow {
         display: none;
     }
@@ -172,26 +186,48 @@ input.car-details:-ms-input-placeholder {
     background-color: #fff;
     border: 0;
     border-radius: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
 }
 
 .side-menu-button:not(.collapsed)::before {
     transform: rotate(0deg);
 }
 
-.side-menu-heading{
+.side-menu-heading {
     font-size: 20px;
     font-weight: 600;
     border-bottom: 1px solid colours.$border-line;
     padding-bottom: 3px;
 }
 
-.ul-side-menu{
+.ul-side-menu {
     list-style-type: none;
     margin-bottom: 0 !important;
-    .li-side-menu{
+
+    .li-side-menu {
         font-size: 16px;
         font-weight: 500;
         padding: 3px 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .pointer-shape {
+        border: none;
+
+        .pointer-shape-arrow {
+            display: none;
+        }
+
+        .pointer-shape-text {
+            font-size: 20px;
+            max-width: 100% !important;
+        }
+    }
+
+    .select,
+    .select2 {
+        display: none;
+    }
+
 }

@@ -55,6 +55,7 @@ body {
   padding: 10px 0 10px 10px;
   text-align: center;
   flex: none;
+  max-width: 160px;
 }
 .pointer-shape .pointer-shape-arrow {
   position: relative;
@@ -64,6 +65,10 @@ body {
   padding: 16px;
   border-width: 0 1px 1px 0;
   transform: translateY(15.5px) rotate(-45deg) skew(-15deg, -15deg) translateX(18px);
+}
+
+.car-details .pointer-shape-text {
+  max-width: 70px;
 }
 
 .reg-field {
@@ -191,4 +196,21 @@ input.car-details:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 500;
   padding: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .pointer-shape {
+    border: none;
+  }
+  .pointer-shape .pointer-shape-arrow {
+    display: none;
+  }
+  .pointer-shape .pointer-shape-text {
+    font-size: 20px;
+    max-width: 100% !important;
+  }
+  .select,
+.select2 {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
