@@ -94,7 +94,7 @@
   border-bottom: 2px solid colours.$blue;
   position: sticky;
   transition: all 2s ease;
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     position: unset !important;
   }
 
@@ -106,7 +106,7 @@
       .search-login-container{
         display: flex;
         align-items: center;
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           display: none;
         }
         .search-container{
@@ -148,7 +148,7 @@
 
       .search-login-mobile-container{
         display: none;
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -289,7 +289,7 @@
   color: colours.$default!important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .logo-img{
     max-width: 140px;
   }
