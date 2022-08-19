@@ -198,6 +198,132 @@ input.car-details:-ms-input-placeholder {
   padding: 3px 0;
 }
 
+@media (max-width: 600px) {
+  #sideMenu {
+    display: none;
+  }
+}
+
+.footer-blue-container {
+  background-color: #009fe3;
+  color: #fff;
+  padding: 15px;
+}
+
+.footer .footer-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .footer-sub-heading {
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .footer .footer-sub-heading {
+    width: 50%;
+  }
+}
+.footer .input-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 4px auto;
+}
+@media (max-width: 600px) {
+  .footer .input-container {
+    flex-direction: column !important;
+  }
+}
+.footer .input-container .footer-input {
+  border: none;
+  height: 32px;
+  max-width: 225px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .footer .input-container .footer-input {
+    max-width: 100% !important;
+    margin-bottom: 8px;
+  }
+}
+.footer .input-container .footer-button {
+  max-width: 225px;
+  width: 100%;
+  background-color: #fa9705;
+  border: 1px solid;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .footer .input-container .footer-button {
+    max-width: 100%;
+  }
+}
+.footer .footer-img {
+  display: none;
+}
+@media (max-width: 600px) {
+  .footer .footer-img {
+    display: block;
+  }
+}
+.footer .footer-light-black-container {
+  background-color: #364950;
+  color: white;
+  padding: 15px;
+}
+.footer .footer-bottom-container {
+  background-color: #1f292a;
+  color: white;
+  padding: 25px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .tec-logo {
+    max-width: 70%;
+    text-align: center;
+  }
+}
+.footer .footer-bottom-container .heading {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .heading {
+    margin-bottom: 25px !important;
+  }
+}
+.footer .footer-bottom-container .information {
+  margin-bottom: 25px;
+}
+.footer .footer-bottom-container .chat-container {
+  padding-bottom: 28px;
+  border-bottom: 1px solid;
+}
+.footer .footer-bottom-container .footer-container {
+  border-bottom: 1px solid;
+  padding-bottom: 25px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .footer-container {
+    flex-direction: column !important;
+  }
+  .footer .footer-bottom-container .footer-container .links-container {
+    margin-bottom: 45px;
+  }
+}
+.footer .footer-bottom-container .tec-logo {
+  max-width: 100%;
+}
+.footer .footer-bottom-container .mail {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .pointer-shape {
     border: none;
@@ -210,7 +336,13 @@ input.car-details:-ms-input-placeholder {
     max-width: 100% !important;
   }
   .select,
-.select2 {
-    display: none;
+.select2, .footer-small-img {
+    display: none !important;
+  }
+  .secure-payment-container, .about-container {
+    display: none !important;
+  }
+  .links-container, .question-container {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */

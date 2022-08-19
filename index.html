@@ -35,12 +35,360 @@
     <script src="section/slider.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <header-component></header-component>
-    <slider-component></slider-component>
+  <!--header-->
+    <div id="myNav" class="overlay">
+    <button class="closeBtn" onclick="closeNav()">
+      <span class="material-symbols-outlined fw-bold">close</span>
+    </button>
+    <div class="overlay-content">
+      <div class="d-flex flex-row p-4">
+        <div class="flex-column flex-grow-1 me-2">
+          <div class="d-flex flex-row justify-content-between">
+            <span class="material-symbols-outlined mobile-login-icon">shopping_cart</span>
+            <div class="d-flex flex-column">
+              <span class="fw-bold fs-4">Your basket</span>
+              <span class="fw-bold fs-1">£12.00</span>
+            </div>
+          </div>
+          <div class="">
+            <button class="check-out-button">CHECK OUT NOW >></button>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="d-flex flex-column align-items-center flex-grow-1">
+          <span class="material-symbols-outlined mobile-login-icon">account_circle</span>
+          <span>Register</span>
+          <span>/login</span>
+        </div>
+      </div>
+
+      <div class="menu-container">
+        <div class="" id="accordionFlushExample">
+          <div class="menu-heading">
+            Car parts
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Air Conditioning
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Cleaning treatment</li>
+                  <li class="li-style">Condenser</li>
+                  <li class="li-style">Compressor</li>
+                  <li class="li-style">Drier</li>
+                  <li class="li-style">Evaporator</li>
+                  <li class="li-style">Expansion & Flow Control Valve</li>
+                  <li class="li-style">Fitting and Sundries</li>
+                  <li class="li-style">Gas</li>
+                  <li class="li-style">Hoses</li>
+                  <li class="li-style">Leak Detection</li>
+                  <li class="li-style">Miscellaneous</li>
+                  <li class="li-style">Switches & Sensors</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Belts Chains & Tensioners
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Drive Belt Kits</li>
+                  <li class="li-style">Drive Belts</li>
+                  <li class="li-style">Tensioners & Pulleys</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Body
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Body Filler </li>
+                  <li class="li-style">Body Miscellaneous</li>
+                  <li class="li-style">Body Panels & Handles</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Braking
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Braking Sensors </li>
+                  <li class="li-style">Braking Discs</li>
+                  <li class="li-style">Braking Drums</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="menu-heading menu-sub-heading">
+            Car Essentials
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Car Audio
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Acoustic Cloth & Carpet</li>
+                  <li class="li-style">Aerials & Aerial Adaptors</li>
+                  <li class="li-style">Amp & Speaker Wiring</li>
+                  <li class="li-style">Audio Fuses</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Cleaning
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Air Fresheners</li>
+                  <li class="li-style">Bug & Tar Remover</li>
+                  <li class="li-style">Car Cleaner</li>
+                  <li class="li-style">Carpet & Upholstery</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="menu-heading menu-sub-heading">
+            Workshop Supplies
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button class="collapsed-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                Office Supplies
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="ul-style">
+                  <li class="li-style">Batteries</li>
+                  <li class="li-style">Catering</li>
+                  <li class="li-style">Stationery</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <div class="main-header">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="assets/images/logo.min.svg" alt="Parts in Motion" class="logo-img">
+        </div>
+
+        <div class="search-login-container">
+          <div class="search-container">
+            <select id='sel_users' class="search">
+              <optgroup label="Braking">
+                <option value='1'>Brake discs</option>
+                <option value='1'>Brake Drums</option>
+                <option value='1'>Brake Hoses</option>
+              </optgroup>
+              <optgroup label="Engine Parts">
+                <option value='1'>Oil sensor and switches</option>
+                <option value='1'>Sump Plugs and Washer</option>
+              </optgroup><optgroup label="Wash and wipe">
+              <option value='1'>Wiper Arms and Blades</option>
+              <option value='1'>Wiper blade</option>
+            </optgroup>
+            </select>
+            <div class="search-icon-container">
+              <span class="material-symbols-outlined search-icon">search</span>
+            </div>
+          </div>
+          <div class="login-container">
+            <span class="material-symbols-outlined login-icon">account_circle</span>
+            <span class="login-text">Register</span>
+            <span class="login-text">/login</span>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="cart-container">
+            <span class="material-symbols-outlined login-icon">shopping_cart</span>
+            <span class="price-text">£12.00</span>
+          </div>
+        </div>
+
+        <div class="search-login-mobile-container">
+          <button class="search-button">
+            <span class="material-symbols-outlined search-icon">search</span>
+          </button>
+          <div class="vertical-line"></div>
+          <span class="material-symbols-outlined login-icon icon-margin">shopping_cart</span>
+          <div class="vertical-line"></div>
+          <button class="search-button" onclick="showMenu()">
+            <span class="material-symbols-outlined login-icon icon-margin">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="black-main-container">
+    <div class="container">
+      <div class="black-details-container">
+        <div class="details-container">
+                      <span class="text">Clutch parts
+                          <span class="arrow-icon">></span>
+                      </span>
+          <span class="text">Braking
+                          <span class="arrow-icon">></span>
+                      </span>
+          <span class="text">Engine Parts
+                          <span class="arrow-icon">></span>
+                      </span>
+          <span class="text">Exhaust parts
+                          <span class="arrow-icon">></span>
+                      </span>
+          <span class="text">Wash & wipe
+                          <span class="arrow-icon">></span>
+                      </span>
+          <span class="text">Steering & suspension
+                          <span class="arrow-icon">></span>
+                      </span>
+        </div>
+        <div class="right-container">
+          <img src="assets/images/uk_flag.png" alt="UK Flag">
+          <span class="logo-text">Proud to be a UK-based company</span>
+          <div class="contact-container">
+            <span class="material-symbols-outlined contact-logo">contact_support</span>
+            <span >Contact us</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--banner-->
+    <div class="bg-blue">
+    <div class="container">
+      <div class="row py-2 align-items-center flex-wrap">
+        <div class="col-xxl-2 col-md-4 col-sm-12">
+          <div class="pointer-shape">
+            <a class="pointer-shape-text" data-slide-index="1" href="">
+              Use the reg finder to find
+              correct parts for your car
+            </a>
+            <div class="pointer-shape-arrow"></div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-5 col-sm-12 py-xxl-0 py-md-3">
+          <div class="reg-field">
+            <div class="px-2 py-1">
+              <img src="assets/images/UK-flag.svg" alt="ek flag" />
+              <span>GB</span>
+            </div>
+            <input
+                    class="inputField w-100"
+                    placeholder="Enter reg here"
+            />
+            <button type="submit" class="px-4">GO</button>
+          </div>
+        </div>
+        <div class="car-details col-12 col-xxl-7 d-flex justify-content-between align-items-center">
+          <div class="pointer-shape me-3">
+            <a class="pointer-shape-text d-md-block d-none" data-slide-index="1" href="">Or enter
+              car details
+            </a>
+            <a class="pointer-shape-text d-md-none d-block" data-slide-index="1" href="">
+              Or click here to search for your vehicle >
+            </a>
+            <div class="pointer-shape-arrow"></div>
+          </div>
+          <select id='carMake' class="ms-2">
+            <optgroup label="Braking">
+              <option value=1>Brake discs</option>
+              <option value=2>Brake Drums</option>
+              <option value=3>Brake Hoses</option>
+            </optgroup>
+            <optgroup label="Engine Parts">
+              <option value=4>Oil sensor and switches</option>
+              <option value=5>Sump Plugs and Washer</option>
+            </optgroup><optgroup label="Wash and wipe">
+            <option value=6>Wiper Arms and Blades</option>
+            <option value=7>Wiper blade</option>
+          </optgroup>
+          </select>
+          <select id='carModel'>
+            <optgroup label="Braking">
+              <option value=2>Brake Drums</option>
+              <option value=3>Brake Hoses</option>
+            </optgroup>
+            <optgroup label="Engine Parts">
+              <option value=4>Oil sensor and switches</option>
+              <option value=5>Sump Plugs and Washer</option>
+            </optgroup><optgroup label="Wash and wipe">
+            <option value=6>Wiper Arms and Blades</option>
+            <option value=7>Wiper blade</option>
+          </optgroup>
+          </select>
+          <select id='carEngine'>
+            <optgroup label="Braking">
+              <option value=3>Brake Hoses</option>
+              <option value=1>Brake discs</option>
+              <option value=2>Brake Drums</option>
+            </optgroup>
+            <optgroup label="Engine Parts">
+              <option value=4>Oil sensor and switches</option>
+              <option value=5>Sump Plugs and Washer</option>
+            </optgroup><optgroup label="Wash and wipe">
+            <option value=6>Wiper Arms and Blades</option>
+            <option value=7>Wiper blade</option>
+          </optgroup>
+          </select>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="banner">
+    <img src="assets/images/reg finder.png" alt="reg finder poster" class="mw-100 d-md-inline d-none" />
+    <img src="assets/images/reg finder mobile.png" alt="reg finder poster" class="w-100 d-md-none d-block" />
+  </div>
+
     <div class="container d-flex">
+      <!--side-menu-->
       <div id="sideMenu">
         <div class="overlay-content side-menu-container">
-          <div class="d-flex flex-row p-4">
+          <div class="d-flex flex-row mt-3 mb-3">
             <div class="flex-column flex-grow-1 me-2">
               <div class="d-flex flex-row justify-content-between">
                 <span class="material-symbols-outlined mobile-login-icon blue-icon">shopping_cart</span>
@@ -514,8 +862,87 @@
         </div>
 
       </div>
+
+      <!--main-body-->
       <div id="mainContainer"></div>
     </div>
+
+  <!--footer-->
+  <div class="footer mt-4">
+    <div class="footer-blue-container d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center">
+        <span class="footer-heading">Sign up and save!</span>
+        <img class="footer-small-img" src="assets/images/email-icon.png" alt="email">
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="footer-sub-heading">Join the Parts In Motion newsletter & get our best offer sent directly to you.</span>
+        <img class="footer-img" src="assets/images/footer-email.png" alt="email">
+      </div>
+      <div class="d-flex input-container align-items-center justify-content-around">
+        <input class="footer-input" placeholder="First name">
+        <input class="footer-input" placeholder="Email address">
+        <button class="footer-button">Subscribe</button>
+      </div>
+    </div>
+
+    <div class="footer-light-black-container align-items-center d-flex flex-column">
+      <span class="footer-heading">Parts In Motion</span>
+      <span class="fs-6 text-center">Great product, great prices, exceptional services</span>
+    </div>
+
+    <div class="footer-bottom-container">
+      <div class="container d-flex footer-container justify-content-between">
+        <div class="about-container d-flex flex-column w-25 me-5">
+          <div class="d-flex flex-column">
+            <span class="heading">ABOUT US</span>
+            <span class="information">At Parts in Motion we have a simple ethos, which is to provide great products at great prices with industry leading customer services.</span>
+          </div>
+          <div class="d-flex flex-column">
+            <span class="heading">CUSTOMER FEEDBACK</span>
+            <span class="information"><i>"Good service, quick delivery and parts arrived very well packed, would recommend"</i> Tony P, North Yorkshire</span>
+          </div>
+        </div>
+        <div class="links-container d-flex flex-column w-25 me-4">
+          <span class="heading">ADDITIONAL LINKS</span>
+          <a>Website feedback form</a>
+          <a>Returns</a>
+          <a>About us</a>
+          <a>Careers with us</a>
+          <a>Contact us</a>
+          <a>Delivery info</a>
+          <a>Terms and Conditions</a>
+          <a>Privacy Policy</a>
+          <a>Cookies Policy</a>
+          <a>Manage your account</a>
+          <a>Credible Range</a>
+          <a>COVID-19 FAQ</a>
+        </div>
+
+        <div class="secure-payment-container d-flex flex-column w-25 me-4">
+          <span class="heading">SECURE PAYMENTS</span>
+          <span class="information">Your payments are always secure when using our encrypted payments system</span>
+          <img src="assets/images/secure_payments.png" alt="paypal">
+
+        </div>
+
+        <div class="question-container d-flex flex-column w-25">
+          <span class="heading">HAVE A QUESTION?</span>
+          <div class="d-flex align-items-center chat-container">
+            <span class="mb-0">If you have a question about our parts or anything else please click here to contact us.</span>
+            <img src="assets/images/have_question.gif" alt="Have Question">
+          </div>
+          <div class="d-flex justify-content-center">
+            <img class="mt-4 tec-logo" src="assets/images/tecdoc.png" alt="TechAlliance-logo">
+          </div>
+        </div>
+
+      </div>
+      <div class="container text-center pt-3">
+        <span>Automation Factors Ltd - Trading as Parts in Motion. All Rights Reserved 2022 |
+          <a class="mail" href="mailto:info@partsinmotion.co.uk">info@partsinmotion.co.uk</a></span>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
