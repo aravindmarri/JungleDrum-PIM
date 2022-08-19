@@ -94,7 +94,7 @@
   position: sticky;
   transition: all 2s ease;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .main-header {
     position: unset !important;
   }
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .main-header .header-container .search-login-container {
     display: none;
   }
@@ -151,7 +151,7 @@
 .main-header .header-container .search-login-mobile-container {
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .main-header .header-container .search-login-mobile-container {
     display: flex;
     justify-content: center;
@@ -285,7 +285,7 @@
   color: #212529 !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .logo-img {
     max-width: 140px;
   }
