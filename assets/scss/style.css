@@ -391,13 +391,14 @@ input.car-details:-ms-input-placeholder {
     max-width: 100% !important;
   }
   .select,
-.select2, .footer-small-img {
+.select2,
+.footer-small-img,
+.secure-payment-container,
+.about-container {
     display: none !important;
   }
-  .secure-payment-container, .about-container {
-    display: none !important;
-  }
-  .links-container, .question-container {
+  .links-container,
+.question-container {
     width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
