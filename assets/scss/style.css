@@ -277,10 +277,51 @@ input.car-details:-ms-input-placeholder {
   color: white;
   padding: 15px;
 }
-@media (max-width: 768px) {
-  .footer .footer-light-black-container {
-    background-color: #879097;
+.footer .footer-bottom-container {
+  background-color: #1f292a;
+  color: white;
+  padding: 25px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .tec-logo {
+    max-width: 70%;
+    text-align: center;
   }
+}
+.footer .footer-bottom-container .heading {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .heading {
+    margin-bottom: 25px !important;
+  }
+}
+.footer .footer-bottom-container .information {
+  margin-bottom: 25px;
+}
+.footer .footer-bottom-container .chat-container {
+  padding-bottom: 28px;
+  border-bottom: 1px solid;
+}
+.footer .footer-bottom-container .footer-container {
+  border-bottom: 1px solid;
+  padding-bottom: 25px;
+}
+@media (max-width: 600px) {
+  .footer .footer-bottom-container .footer-container {
+    flex-direction: column !important;
+  }
+  .footer .footer-bottom-container .footer-container .links-container {
+    margin-bottom: 45px;
+  }
+}
+.footer .footer-bottom-container .tec-logo {
+  max-width: 100%;
+}
+.footer .footer-bottom-container .mail {
+  text-decoration: none;
+  color: #fff;
 }
 
 .more-info-cards h3 {
@@ -350,10 +391,13 @@ input.car-details:-ms-input-placeholder {
     max-width: 100% !important;
   }
   .select,
-.select2 {
-    display: none;
+.select2, .footer-small-img {
+    display: none !important;
   }
-  .footer-small-img {
-    display: none;
+  .secure-payment-container, .about-container {
+    display: none !important;
+  }
+  .links-container, .question-container {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */

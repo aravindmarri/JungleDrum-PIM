@@ -292,12 +292,65 @@ input.car-details:-ms-input-placeholder {
         background-color: colours.$footer-black-1;
         color: white;
         padding: 15px;
-
-        @media (max-width: 768px) {
-            background-color: colours.$footer-black-mobile-1;
-        }
     }
-}
+    .footer-bottom-container{
+        background-color: colours.$footer-black-2;
+        color: white;
+        padding: 25px;
+        @media (max-width: 600px) {
+            .tec-logo{
+                max-width: 70%;
+                text-align: center;
+            }
+        }
+        .heading{
+            font-size: 15px;
+            margin-bottom: 8px;
+            @media (max-width: 600px) {
+                margin-bottom: 25px !important;
+            }
+        }
+        .information{
+            margin-bottom: 25px;
+        }
+        .chat-container{
+            padding-bottom: 28px;
+            border-bottom: 1px solid;
+        }
+        .footer-container{
+            border-bottom: 1px solid;
+            padding-bottom: 25px;
+            @media (max-width: 600px) {
+                flex-direction: column !important;
+                .links-container{
+                    margin-bottom: 45px;
+                }
+            }
+        }
+        .tec-logo{
+            max-width: 100%;
+        }
+        .mail{
+            text-decoration: none;
+            color: colours.$white;
+        }
+
+        .info-btn {
+            background-color: colours.$more-info-btn;
+            border: 1px solid colours.$white;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            color: colours.$white;
+            font-weight: 700;
+        }
+
+
+        @media screen and (max-width: 1200px) {
+
+            .find-card {
+                flex: 1 1 40%;
+            }
 
 .more-info-cards {
     h3 {
@@ -365,22 +418,25 @@ input.car-details:-ms-input-placeholder {
     .pointer-shape {
         border: none;
 
-        .pointer-shape-arrow {
-            display: none;
-        }
+                    .pointer-shape-arrow {
+                        display: none;
+                    }
 
-        .pointer-shape-text {
-            font-size: 20px;
-            max-width: 100% !important;
-        }
-    }
+                    .pointer-shape-text {
+                        font-size: 20px;
+                        max-width: 100% !important;
+                    }
+                }
 
     .select,
-    .select2 {
-        display: none;
+    .select2, .footer-small-img{
+        display: none !important;
     }
 
-    .footer-small-img {
-        display: none;
+    .secure-payment-container, .about-container{
+        display: none !important;
+    }
+    .links-container, .question-container{
+        width: 100% !important;
     }
 }
