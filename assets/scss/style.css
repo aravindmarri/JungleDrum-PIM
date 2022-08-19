@@ -198,12 +198,6 @@ input.car-details:-ms-input-placeholder {
   padding: 3px 0;
 }
 
-@media (max-width: 768px) {
-  #sideMenu {
-    display: none;
-  }
-}
-
 .footer-blue-container {
   background-color: #009fe3;
   color: #fff;
@@ -218,20 +212,10 @@ input.car-details:-ms-input-placeholder {
   font-size: 14px;
   font-weight: 500;
 }
-@media (max-width: 768px) {
-  .footer .footer-sub-heading {
-    width: 50%;
-  }
-}
 .footer .input-container {
   max-width: 700px;
   width: 100%;
   margin: 4px auto;
-}
-@media (max-width: 768px) {
-  .footer .input-container {
-    flex-direction: column !important;
-  }
 }
 .footer .input-container .footer-input {
   border: none;
@@ -243,12 +227,6 @@ input.car-details:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 500;
 }
-@media (max-width: 768px) {
-  .footer .input-container .footer-input {
-    max-width: 100% !important;
-    margin-bottom: 8px;
-  }
-}
 .footer .input-container .footer-button {
   max-width: 225px;
   width: 100%;
@@ -259,18 +237,8 @@ input.car-details:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 600;
 }
-@media (max-width: 768px) {
-  .footer .input-container .footer-button {
-    max-width: 100%;
-  }
-}
 .footer .footer-img {
   display: none;
-}
-@media (max-width: 768px) {
-  .footer .footer-img {
-    display: block;
-  }
 }
 .footer .footer-light-black-container {
   background-color: #364950;
@@ -282,20 +250,9 @@ input.car-details:-ms-input-placeholder {
   color: white;
   padding: 25px;
 }
-@media (max-width: 600px) {
-  .footer .footer-bottom-container .tec-logo {
-    max-width: 70%;
-    text-align: center;
-  }
-}
 .footer .footer-bottom-container .heading {
   font-size: 15px;
   margin-bottom: 8px;
-}
-@media (max-width: 600px) {
-  .footer .footer-bottom-container .heading {
-    margin-bottom: 25px !important;
-  }
 }
 .footer .footer-bottom-container .information {
   margin-bottom: 25px;
@@ -307,14 +264,6 @@ input.car-details:-ms-input-placeholder {
 .footer .footer-bottom-container .footer-container {
   border-bottom: 1px solid;
   padding-bottom: 25px;
-}
-@media (max-width: 600px) {
-  .footer .footer-bottom-container .footer-container {
-    flex-direction: column !important;
-  }
-  .footer .footer-bottom-container .footer-container .links-container {
-    margin-bottom: 45px;
-  }
 }
 .footer .footer-bottom-container .tec-logo {
   max-width: 100%;
@@ -374,6 +323,28 @@ input.car-details:-ms-input-placeholder {
   font-weight: 700;
 }
 
+.feature-container .hr-line {
+  border-bottom: 1px solid #dedfe1;
+  width: 40%;
+}
+.feature-container .feature-heading {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 0 5px;
+}
+.feature-container .feature-img {
+  max-width: 125px;
+}
+.feature-container .feature-name {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.feature-container .feature {
+  flex-basis: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .find-card {
     flex: 1 1 40%;
@@ -394,11 +365,48 @@ input.car-details:-ms-input-placeholder {
 .select2,
 .footer-small-img,
 .secure-payment-container,
-.about-container {
+.about-container,
+.feature-last,
+#sideMenu {
     display: none !important;
   }
   .links-container,
 .question-container {
     width: 100% !important;
+  }
+  .footer-container {
+    flex-direction: column !important;
+  }
+  .footer-container .links-container {
+    margin-bottom: 45px !important;
+  }
+  .footer-bottom-container .tec-logo {
+    max-width: 70% !important;
+    text-align: center !important;
+  }
+  .footer-bottom-container .heading {
+    margin-bottom: 25px !important;
+  }
+  .footer-img {
+    display: block !important;
+  }
+  .input-container {
+    flex-direction: column !important;
+  }
+  .input-container .footer-input {
+    max-width: 100% !important;
+    margin-bottom: 8px !important;
+  }
+  .input-container .footer-button {
+    max-width: 100% !important;
+  }
+  .footer-sub-heading {
+    width: 50%;
+  }
+  #mainContainer {
+    width: 100% !important;
+  }
+  #mainContainer .feature-img {
+    max-width: 95px !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -212,12 +212,6 @@ input.car-details:-ms-input-placeholder {
 }
 
 
-#sideMenu {
-    @media (max-width: 768px) {
-        display: none;
-    }
-}
-
 .footer-blue-container {
     background-color: colours.$blue;
     color: colours.$white;
@@ -233,20 +227,12 @@ input.car-details:-ms-input-placeholder {
     .footer-sub-heading {
         font-size: 14px;
         font-weight: 500;
-
-        @media (max-width: 768px) {
-            width: 50%;
-        }
     }
 
     .input-container {
         max-width: 700px;
         width: 100%;
         margin: 4px auto;
-
-        @media (max-width: 768px) {
-            flex-direction: column !important;
-        }
 
         .footer-input {
             border: none;
@@ -257,11 +243,6 @@ input.car-details:-ms-input-placeholder {
             border-radius: 5px;
             font-size: 16px;
             font-weight: 500;
-
-            @media (max-width: 768px) {
-                max-width: 100% !important;
-                margin-bottom: 8px;
-            }
         }
 
         .footer-button {
@@ -273,19 +254,11 @@ input.car-details:-ms-input-placeholder {
             border-radius: 5px;
             font-size: 16px;
             font-weight: 600;
-
-            @media (max-width: 768px) {
-                max-width: 100%;
-            }
         }
     }
 
     .footer-img {
         display: none;
-
-        @media (max-width: 768px) {
-            display: block;
-        }
     }
 
     .footer-light-black-container {
@@ -299,20 +272,9 @@ input.car-details:-ms-input-placeholder {
         color: white;
         padding: 25px;
 
-        @media (max-width: 600px) {
-            .tec-logo {
-                max-width: 70%;
-                text-align: center;
-            }
-        }
-
         .heading {
             font-size: 15px;
             margin-bottom: 8px;
-
-            @media (max-width: 600px) {
-                margin-bottom: 25px !important;
-            }
         }
 
         .information {
@@ -327,14 +289,6 @@ input.car-details:-ms-input-placeholder {
         .footer-container {
             border-bottom: 1px solid;
             padding-bottom: 25px;
-
-            @media (max-width: 600px) {
-                flex-direction: column !important;
-
-                .links-container {
-                    margin-bottom: 45px;
-                }
-            }
         }
 
         .tec-logo {
@@ -402,6 +356,30 @@ input.car-details:-ms-input-placeholder {
     font-weight: 700;
 }
 
+.feature-container{
+    .hr-line{
+        border-bottom: 1px solid colours.$border-line;
+        width: 40%;
+    }
+    .feature-heading{
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+    .feature-img{
+        max-width: 125px;
+    }
+    .feature-name{
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -429,12 +407,52 @@ input.car-details:-ms-input-placeholder {
     .select2,
     .footer-small-img,
     .secure-payment-container,
-    .about-container  {
+    .about-container,
+    .feature-last,
+    #sideMenu{
         display: none !important;
     }
 
     .links-container,
     .question-container {
         width: 100% !important;
+    }
+
+    .footer-container{
+        flex-direction: column !important;
+        .links-container{
+            margin-bottom: 45px !important;
+        }
+    }
+    .footer-bottom-container{
+        .tec-logo{
+            max-width: 70% !important;
+            text-align: center !important;
+        }
+        .heading{
+            margin-bottom: 25px !important;
+        }
+    }
+    .footer-img{
+        display: block !important;
+    }
+    .input-container{
+        flex-direction: column !important;
+        .footer-input{
+            max-width: 100% !important;
+            margin-bottom: 8px !important;
+        }
+        .footer-button{
+            max-width: 100% !important;
+        }
+    }
+    .footer-sub-heading{
+        width: 50%;
+    }
+    #mainContainer{
+        width: 100% !important;
+        .feature-img{
+            max-width: 95px !important;
+        }
     }
 }
