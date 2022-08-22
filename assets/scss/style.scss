@@ -356,30 +356,80 @@ input.car-details:-ms-input-placeholder {
     font-weight: 700;
 }
 
-.feature-container{
-    .hr-line{
+.feature-container {
+    .feature-img {
+        max-width: 125px;
+    }
+
+    .feature-name {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .feature {
+        flex-basis: 100%;
+    }
+}
+
+.body-heading {
+    .hr-line {
         border-bottom: 1px solid colours.$border-line;
         width: 40%;
     }
-    .feature-heading{
+
+    .heading {
         font-size: 20px;
         font-weight: bold;
         white-space: nowrap;
         margin: 0 5px;
     }
-    .feature-img{
-        max-width: 125px;
-    }
-    .feature-name{
-        font-weight: bold;
-        font-size: 14px;
-        text-align: center;
-    }
-    .feature{
-        flex-basis: 100%;
+}
+
+.service-parts {
+    .parts {
+        flex: 1 1 10%;
+
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            height: 200px;
+        }
     }
 }
 
+.news {
+    flex: 1;
+
+    span {
+        font-size: 20px;
+        font-weight: 600;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    img {
+        height: 150px;
+        width: 50%;
+        object-fit: contain;
+    }
+}
 .about-and-follow{
     .hr-line{
         border-bottom: 1px solid colours.$border-line;
@@ -474,6 +524,12 @@ input.car-details:-ms-input-placeholder {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .news {
+        flex: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .pointer-shape {
         border: none;
@@ -494,7 +550,7 @@ input.car-details:-ms-input-placeholder {
     .secure-payment-container,
     .about-container,
     .feature-last,
-    #sideMenu{
+    #sideMenu {
         display: none !important;
     }
 
@@ -503,45 +559,60 @@ input.car-details:-ms-input-placeholder {
         width: 100% !important;
     }
 
-    .footer-container{
+    .footer-container {
         flex-direction: column !important;
-        .links-container{
+
+        .links-container {
             margin-bottom: 45px !important;
         }
     }
-    .footer-bottom-container{
-        .tec-logo{
+
+    .footer-bottom-container {
+        .tec-logo {
             max-width: 70% !important;
             text-align: center !important;
         }
-        .heading{
+
+        .heading {
             margin-bottom: 25px !important;
         }
     }
-    .footer-img{
+
+    .footer-img {
         display: block !important;
     }
-    .input-container{
+
+    .input-container {
         flex-direction: column !important;
-        .footer-input{
+
+        .footer-input {
             max-width: 100% !important;
             margin-bottom: 8px !important;
         }
-        .footer-button{
+
+        .footer-button {
             max-width: 100% !important;
         }
     }
-    .footer-sub-heading{
+
+    .footer-sub-heading {
         width: 50%;
     }
-    #mainContainer{
+
+    #mainContainer {
         width: 100% !important;
-        .feature-img{
+
+        .feature-img {
             max-width: 95px !important;
         }
     }
-}
 
+    .service-parts {
+        .parts {
+            flex: 1 1 50%;
+        }
+    }
+}
 @media screen and (max-width: 576px) {
     .last-column{
         display: none;
