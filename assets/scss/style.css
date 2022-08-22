@@ -71,6 +71,10 @@ body {
   max-width: 70px;
 }
 
+.select2-selection__placeholder {
+  color: black !important;
+}
+
 .reg-field {
   display: flex;
   border: 1px solid #FFF;
@@ -325,6 +329,7 @@ input.car-details:-ms-input-placeholder {
 
 .feature-container .feature-img {
   max-width: 125px;
+  max-height: 139px;
 }
 .feature-container .feature-name {
   font-weight: bold;
@@ -340,7 +345,7 @@ input.car-details:-ms-input-placeholder {
   width: 40%;
 }
 .body-heading .heading {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   white-space: nowrap;
   margin: 0 5px;
@@ -391,7 +396,7 @@ input.car-details:-ms-input-placeholder {
   width: 44%;
 }
 .about-and-follow .feature-heading {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   white-space: nowrap;
   margin: 0 5px;
@@ -463,7 +468,7 @@ input.car-details:-ms-input-placeholder {
   width: 43%;
 }
 .feature-brand .feature-heading, .feature-brand-mobile .feature-heading {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   white-space: nowrap;
   margin: 0 5px;
@@ -487,7 +492,7 @@ input.car-details:-ms-input-placeholder {
 .feature-brand-mobile .hexagon:after {
   content: "";
   position: absolute;
-  left: 22px;
+  left: 21px;
   width: 57px;
   height: 57px;
   transform: rotate(145deg) skew(22.5deg);
