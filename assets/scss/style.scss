@@ -380,6 +380,23 @@ input.car-details:-ms-input-placeholder {
     }
 }
 
+.about-and-follow{
+    .hr-line{
+        border-bottom: 1px solid colours.$border-line;
+        width: 44%;
+    }
+    .feature-heading{
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+    .about-text{
+        color: #c5c1c1;
+        font-size: 14px;
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -387,6 +404,74 @@ input.car-details:-ms-input-placeholder {
         flex: 1 1 40%;
     }
 
+    .about-and-follow{
+        flex-direction: column !important;
+    }
+    .follow-us-container{
+        margin-top: 10px;
+    }
+}
+
+.feature-brand, .feature-brand-mobile{
+    padding: 10px;
+    .hr-line{
+        border-bottom: 1px solid colours.$border-line;
+        width: 43%;
+    }
+    .feature-heading{
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+    .hexagon {
+        width: 100px;
+        height: 55px;
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .hexagon,
+    .hexagon:before,
+    .hexagon:after {
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        left: 22px;
+        width: 57px;
+        height: 57px;
+        transform: rotate(145deg) skew(22.5deg);
+    }
+
+    .hexagon:before {
+        top: -29px;
+    }
+
+    .hexagon:after {
+        top: 27px;
+    }
+
+    .hexagon span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 55px;
+        background: white;
+        z-index: 1;
+    }
+    .hexagon-img{
+        max-width: 70px;
+        text-align: center;
+    }
+    .hexagon-container{
+        margin: 60px 0 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -453,6 +538,38 @@ input.car-details:-ms-input-placeholder {
         width: 100% !important;
         .feature-img{
             max-width: 95px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .last-column{
+        display: none;
+    }
+    .about-text{
+        color: colours.$about-text-mobile !important;
+    }
+    .feature-brand{
+        display: none;
+    }
+    .feature-brand-mobile{
+        display: block !important;
+        background-color: #009fe3;
+        .hr-line{
+            display: none;
+        }
+        .feature-heading{
+            color: colours.$white;
+            font-size: 24px !important;
+            margin: 5px !important;
+        }
+        .hexagon:before,
+        .hexagon:after {
+            border: 3px solid #6fc1e1;
+        }
+        .hexagon span {
+            border-left: 4px solid #6fc1e1;
+            border-right: 4px solid #6fc1e1;;
         }
     }
 }
