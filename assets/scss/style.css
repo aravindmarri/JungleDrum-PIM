@@ -406,6 +406,49 @@ input.car-details:-ms-input-placeholder {
   font-size: 14px;
 }
 
+.review .view {
+  width: 180px;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 10px;
+  flex: 1 1 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review .view .quote {
+  height: 50px;
+  margin: 0 auto;
+}
+.review .view .review-words {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.review .view .profile img {
+  max-width: 30%;
+  margin-right: 5px;
+}
+.review .view .profile p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+.review .view .profile span {
+  font-size: 13px;
+}
+.review .view .profile div {
+  margin: auto 0;
+}
+.review .carousel-indicators {
+  bottom: -40px;
+}
+.review .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #212529;
+}
+
 @media screen and (max-width: 1200px) {
   .find-card {
     flex: 1 1 40%;
