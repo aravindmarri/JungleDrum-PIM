@@ -13,5 +13,19 @@ $('#carEngine').select2({
   dropdownCssClass: "car-dropdown",
 });
 
+let fluid = function() {
+  const element = $(".find-out");
+  if ($(window).width() <= 576) {
+    element.html('MORE INFO >');
+  } else{
+    element.html('FIND OUT MORE >');
+  }
+};
+
+// Fire on DOM ready
+fluid();
+
+// Fire upon resize
+$(window).resize(fluid);
 
 
