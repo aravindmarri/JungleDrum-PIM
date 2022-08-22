@@ -546,6 +546,7 @@ input.car-details:-ms-input-placeholder {
 .secure-payment-container,
 .about-container,
 .feature-last,
+.mobile-hide,
 #sideMenu {
     display: none !important;
   }
@@ -575,6 +576,8 @@ input.car-details:-ms-input-placeholder {
   .input-container .footer-input {
     max-width: 100% !important;
     margin-bottom: 8px !important;
+    text-align: unset !important;
+    padding-left: 12px;
   }
   .input-container .footer-button {
     max-width: 100% !important;
