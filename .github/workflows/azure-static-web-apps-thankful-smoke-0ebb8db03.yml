@@ -17,6 +17,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Build
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
   deploy:
     name: Deploy to azure static websites 🚀
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
@@ -40,7 +46,7 @@ jobs:
   ftp_deploy:
     name: Deploy to gss site through FTP 🚀
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    needs: build
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Build And Deploy to gss site
