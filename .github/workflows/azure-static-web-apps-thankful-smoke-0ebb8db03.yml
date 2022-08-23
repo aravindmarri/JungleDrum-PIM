@@ -17,10 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
-      - name: Archive production artifact
-        uses: actions/upload-artifact@master
   deploy:
     name: Deploy to azure static websites 🚀
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -40,6 +39,8 @@ jobs:
   
   ftp_deploy:
     name: Deploy to gss site through FTP 🚀
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Build And Deploy to gss site
