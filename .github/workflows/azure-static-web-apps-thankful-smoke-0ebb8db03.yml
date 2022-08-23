@@ -10,21 +10,10 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build ⛏
+  build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@master
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-  deploy:
-    name: Deploy to azure static websites 🚀
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    needs: build
-    runs-on: ubuntu-latest
+    name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
         with:
@@ -42,20 +31,12 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-  
-  ftp_deploy:
-    name: Deploy to gss site through FTP 🚀
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build And Deploy to gss site
+      - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
           server: pim.gsstech.in
           username: aravind@pim.gsstech.in
           password: ${{ secrets.ftp_password }}
-      
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
