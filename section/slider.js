@@ -21,6 +21,7 @@ let fluid = function() {
   } else{
     element.html('FIND OUT MORE >');
     $('.braking-text').show();
+    $('#searchDropdown').hide();
   }
 };
 

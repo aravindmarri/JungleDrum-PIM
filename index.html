@@ -243,7 +243,7 @@
         </div>
 
         <div class="search-login-mobile-container">
-          <button class="search-button">
+          <button class="search-button" onclick="showDropdown()">
             <span class="material-symbols-outlined search-icon">search</span>
           </button>
           <div class="vertical-line"></div>
@@ -253,6 +253,27 @@
             <span class="material-symbols-outlined login-icon icon-margin">menu</span>
           </button>
         </div>
+      </div>
+    </div>
+  </div>
+  <div id="searchDropdown">
+    <div class="search-dropdown-mobile-container d-flex justify-content-center">
+      <div class="search-container">
+        <select id='searchParts' class="search">
+          <optgroup label="Braking">
+            <option value='1'>Brake discs</option>
+            <option value='1'>Brake Drums</option>
+            <option value='1'>Brake Hoses</option>
+          </optgroup>
+          <optgroup label="Engine Parts">
+            <option value='1'>Oil sensor and switches</option>
+            <option value='1'>Sump Plugs and Washer</option>
+          </optgroup>
+          <optgroup label="Wash and wipe">
+            <option value='1'>Wiper Arms and Blades</option>
+            <option value='1'>Wiper blade</option>
+          </optgroup>
+        </select>
       </div>
     </div>
   </div>
@@ -315,8 +336,8 @@
             <button type="submit" class="px-4">GO</button>
           </div>
         </div>
-        <div class="car-details col-12 col-xxl-7 d-flex justify-content-between align-items-center">
-          <div class="pointer-shape me-3">
+        <div class="car-details col-12 col-xxl-7 d-flex justify-content-start align-items-center">
+          <div class="pointer-shape me-5">
             <a class="pointer-shape-text d-md-block d-none" data-slide-index="1" href="">Or enter
               car details
             </a>
@@ -325,54 +346,55 @@
             </a>
             <div class="pointer-shape-arrow"></div>
           </div>
-          <select id='carMake' class="ms-2">
-            <option></option>
-            <optgroup label="Braking">
-              <option value=1>Brake discs</option>
-              <option value=2>Brake Drums</option>
-              <option value=3>Brake Hoses</option>
-            </optgroup>
-            <optgroup label="Engine Parts">
-              <option value=4>Oil sensor and switches</option>
-              <option value=5>Sump Plugs and Washer</option>
-            </optgroup>
-            <optgroup label="Wash and wipe">
-              <option value=6>Wiper Arms and Blades</option>
-              <option value=7>Wiper blade</option>
-            </optgroup>
-          </select>
-          <select id='carModel'>
-            <option></option>
-            <optgroup label="Braking">
-              <option value=2>Brake Drums</option>
-              <option value=3>Brake Hoses</option>
-            </optgroup>
-            <optgroup label="Engine Parts">
-              <option value=4>Oil sensor and switches</option>
-              <option value=5>Sump Plugs and Washer</option>
-            </optgroup>
-            <optgroup label="Wash and wipe">
-              <option value=6>Wiper Arms and Blades</option>
-              <option value=7>Wiper blade</option>
-            </optgroup>
-          </select>
-          <select id='carEngine'>
-            <option></option>
-            <optgroup label="Braking">
-              <option value=3>Brake Hoses</option>
-              <option value=1>Brake discs</option>
-              <option value=2>Brake Drums</option>
-            </optgroup>
-            <optgroup label="Engine Parts">
-              <option value=4>Oil sensor and switches</option>
-              <option value=5>Sump Plugs and Washer</option>
-            </optgroup>
-            <optgroup label="Wash and wipe">
-              <option value=6>Wiper Arms and Blades</option>
-              <option value=7>Wiper blade</option>
-            </optgroup>
-          </select>
-
+          <div class="d-flex dropdown-container">
+            <select id='carMake' class="ms-2">
+              <option></option>
+              <optgroup label="Braking">
+                <option value=1>Brake discs</option>
+                <option value=2>Brake Drums</option>
+                <option value=3>Brake Hoses</option>
+              </optgroup>
+              <optgroup label="Engine Parts">
+                <option value=4>Oil sensor and switches</option>
+                <option value=5>Sump Plugs and Washer</option>
+              </optgroup>
+              <optgroup label="Wash and wipe">
+                <option value=6>Wiper Arms and Blades</option>
+                <option value=7>Wiper blade</option>
+              </optgroup>
+            </select>
+            <select id='carModel'>
+              <option></option>
+              <optgroup label="Braking">
+                <option value=2>Brake Drums</option>
+                <option value=3>Brake Hoses</option>
+              </optgroup>
+              <optgroup label="Engine Parts">
+                <option value=4>Oil sensor and switches</option>
+                <option value=5>Sump Plugs and Washer</option>
+              </optgroup>
+              <optgroup label="Wash and wipe">
+                <option value=6>Wiper Arms and Blades</option>
+                <option value=7>Wiper blade</option>
+              </optgroup>
+            </select>
+            <select id='carEngine'>
+              <option></option>
+              <optgroup label="Braking">
+                <option value=3>Brake Hoses</option>
+                <option value=1>Brake discs</option>
+                <option value=2>Brake Drums</option>
+              </optgroup>
+              <optgroup label="Engine Parts">
+                <option value=4>Oil sensor and switches</option>
+                <option value=5>Sump Plugs and Washer</option>
+              </optgroup>
+              <optgroup label="Wash and wipe">
+                <option value=6>Wiper Arms and Blades</option>
+                <option value=7>Wiper blade</option>
+              </optgroup>
+            </select>
+          </div>
         </div>
       </div>
     </div>

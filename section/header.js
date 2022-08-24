@@ -2,6 +2,9 @@ let query = {};
 let $element = $('#sel_users');
 $('#sel_users').val('');
 
+let $element2 = $('#searchParts');
+$('#searchParts').val('');
+
 function markMatch (text, term) {
   // Find where the match is
   var match = text.toUpperCase().indexOf(term.toUpperCase());
@@ -52,7 +55,32 @@ $element.select2({
   multiple: true,
 });
 
+$element2.select2({
+  maximumSelectionLength: 1,
+  dropdownCssClass: "search-dropdown",
+  templateResult: function (item) {
+    // No need to template the searching text
+    if (item.loading) {
+      return item.text;
+    }
+
+    const term = query.term || '';
+    return markMatch(item.text, term);
+  },
+  language: {
+    searching: function (params) {
+      // Intercept the query as it is happening
+      query = params;
+
+      // Change this to be appropriate for your application
+      return 'Searching…';
+    }
+  },
+  multiple: true,
+});
+
 $element.val('');
+
 
 
 function showMenu() {
@@ -61,4 +89,12 @@ function showMenu() {
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+}
+
+function showDropdown(){
+  if($("#searchDropdown").is(":visible")){
+    $('#searchDropdown').hide();
+  } else{
+    $('#searchDropdown').show();
+  }
 }

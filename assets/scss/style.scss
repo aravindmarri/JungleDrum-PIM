@@ -713,16 +713,15 @@ input.car-details:-ms-input-placeholder {
     }
 
     .select,
-    .select2,
     .footer-small-img,
     .secure-payment-container,
     .about-container,
     .feature-last,
     .mobile-hide,
-    #sideMenu {
+    #sideMenu ,
+    .dropdown-container{
         display: none !important;
     }
-
     .links-container,
     .question-container {
         width: 100% !important;

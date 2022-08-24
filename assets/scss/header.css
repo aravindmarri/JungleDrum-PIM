@@ -238,6 +238,8 @@
 .select2-container {
   border: none;
   font-weight: 500;
+  min-width: 200px !important;
+  width: 100% !important;
 }
 
 .select2-selection--multiple {
@@ -294,6 +296,17 @@
 
 .side-menu-container {
   color: #212529 !important;
+}
+
+#searchDropdown {
+  display: none;
+}
+
+.search-dropdown-mobile-container .search-container {
+  display: flex;
+  border: 1px solid #009fe3;
+  border-radius: 4px;
+  min-width: 200px;
 }
 
 @media (max-width: 768px) {
