@@ -36,6 +36,7 @@
   width: 100%;
   font-weight: 600;
   font-size: 17px;
+  white-space: nowrap;
 }
 .overlay-content .menu-container {
   margin: 20px 0 20px 20px;
