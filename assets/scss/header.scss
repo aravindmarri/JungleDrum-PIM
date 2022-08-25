@@ -37,6 +37,7 @@
     width: 100%;
     font-weight: 600;
     font-size: 17px;
+    white-space: nowrap;
   }
   .menu-container{
     margin: 20px 0 20px 20px;
@@ -157,8 +158,6 @@
           background: none;
           border: none;
           color: colours.$blue;
-          max-width: 24px;
-          margin-right: 20px;
           .search-icon{
             font-size: 30px !important;
           }
@@ -241,6 +240,8 @@
 .select2-container{
   border: none;
   font-weight: 500;
+  min-width: 170px !important;
+  width: 100% !important;
 }
 
 .select2-selection--multiple{
@@ -252,6 +253,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  padding-right: 35px;
 }
 
 .search-dropdown{
@@ -300,6 +302,19 @@
 
 .side-menu-container{
   color: colours.$default!important;
+}
+
+#searchDropdown{
+  display: none;
+}
+
+.search-dropdown-mobile-container{
+  .search-container {
+    display: flex;
+    border: 1px solid colours.$blue;
+    border-radius: 4px;
+    min-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {

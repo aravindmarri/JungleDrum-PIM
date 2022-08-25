@@ -29,7 +29,7 @@
           <div class="d-flex flex-row justify-content-between">
             <span class="material-symbols-outlined mobile-login-icon">shopping_cart</span>
             <div class="d-flex flex-column">
-              <span class="fw-bold fs-4">Your basket</span>
+              <span class="fw-bold fs-4 white-space-nowrap">Your basket</span>
               <span class="fw-bold fs-1">£12.00</span>
             </div>
           </div>
@@ -277,6 +277,7 @@
       </div>
     </div>
   </div>
+
   <div class="black-main-container">
     <div class="container">
       <div class="black-details-container">
@@ -313,97 +314,60 @@
   </div>
 
   <!--banner-->
+  <div class="car-details-mobile-container d-none">
+    <div class="container d-flex flex-column">
+      <div class="car-details-main-row">Nissan Quashqai</div>
+      <table>
+        <tr class="car-details-main-row car-details-row">
+          <td class="light-grey">VARIANT</td>
+          <td>Mk2 (J11) 2013 Hatchback</td>
+        </tr>
+        <tr class="car-details-main-row car-details-row">
+          <td class="light-grey">TYPE</td>
+          <td>DCI Tekna</td>
+        </tr>
+        <tr class="car-details-main-row car-details-row">
+          <td class="light-grey">ENGINE</td>
+          <td>1461CCM 108HP 81KW(Diesel)</td>
+        </tr>
+      </table>
+      <div class="car-details-text">We're only showing parts that fit this vehicle</div>
+    </div>
+  </div>
   <div class="bg-blue">
     <div class="container">
-      <div class="row py-2 align-items-center flex-wrap">
-        <div class="col-xxl-2 col-md-4 col-sm-12">
-          <div class="pointer-shape">
-            <a class="pointer-shape-text" data-slide-index="1" href="">
-              Use the reg finder to find
-              <span class="mobile-hide">correct</span> parts for your car
-            </a>
-            <div class="pointer-shape-arrow"></div>
+      <div class="d-flex parent-banner justify-content-between align-items-center">
+        <div class="d-flex banner-container flex-wrap">
+          <div class="d-none banner-info ps-2">We are only showing parts that fit this vehicle</div>
+          <div class="d-flex">
+          <div class="banner-chip m-1">
+            <span class="banner-text">YOUR CAR:</span>
+            <span class="banner-res">Nissan Quashqai</span>
+          </div>
+          <div class="banner-chip m-1">
+            <span class="banner-text">VARIANT:</span>
+            <span class="banner-res">Mk2 (J11) 2013 Hatchback</span>
+          </div>
+          </div>
+          <div class="d-flex">
+          <div class="banner-chip m-1">
+            <span class="banner-text">TYPE:</span>
+            <span class="banner-res">DCI Tekna</span>
+          </div>
+          <div class="banner-chip m-1">
+            <span class="banner-text">ENGINE:</span>
+            <span class="banner-res">1461CCM 108HP 81KW(Diesel)</span>
+          </div>
           </div>
         </div>
-
-        <div class="col-xxl-3 col-md-5 col-sm-12 py-xxl-0 py-md-3">
-          <div class="reg-field">
-            <div class="px-2 py-1">
-              <img src="assets/images/UK-flag.svg" alt="ek flag" />
-              <span>GB</span>
-            </div>
-            <input class="inputField w-100" placeholder="Enter reg here" />
-            <button type="submit" class="px-4">GO</button>
-          </div>
-        </div>
-        <div class="car-details col-12 col-xxl-7 d-flex justify-content-start align-items-center">
-          <div class="pointer-shape me-5">
-            <a class="pointer-shape-text d-md-block d-none" data-slide-index="1" href="">Or enter
-              car details
-            </a>
-            <a class="pointer-shape-text d-md-none d-block" data-slide-index="1" href="">
-              Or click here to search for your vehicle >
-            </a>
-            <div class="pointer-shape-arrow"></div>
-          </div>
-          <div class="d-flex dropdown-container">
-            <div class="me-2">
-              <select id='carMake' class="ms-2">
-                <option></option>
-                <optgroup label="Braking">
-                  <option value=1>Brake discs</option>
-                  <option value=2>Brake Drums</option>
-                  <option value=3>Brake Hoses</option>
-                </optgroup>
-                <optgroup label="Engine Parts">
-                  <option value=4>Oil sensor and switches</option>
-                  <option value=5>Sump Plugs and Washer</option>
-                </optgroup>
-                <optgroup label="Wash and wipe">
-                  <option value=6>Wiper Arms and Blades</option>
-                  <option value=7>Wiper blade</option>
-                </optgroup>
-              </select>
-            </div>
-            <div class="me-2">
-              <select id='carModel'>
-                <option></option>
-                <optgroup label="Braking">
-                  <option value=2>Brake Drums</option>
-                  <option value=3>Brake Hoses</option>
-                </optgroup>
-                <optgroup label="Engine Parts">
-                  <option value=4>Oil sensor and switches</option>
-                  <option value=5>Sump Plugs and Washer</option>
-                </optgroup>
-                <optgroup label="Wash and wipe">
-                  <option value=6>Wiper Arms and Blades</option>
-                  <option value=7>Wiper blade</option>
-                </optgroup>
-              </select>
-            </div>
-            <select id='carEngine'>
-              <option></option>
-              <optgroup label="Braking">
-                <option value=3>Brake Hoses</option>
-                <option value=1>Brake discs</option>
-                <option value=2>Brake Drums</option>
-              </optgroup>
-              <optgroup label="Engine Parts">
-                <option value=4>Oil sensor and switches</option>
-                <option value=5>Sump Plugs and Washer</option>
-              </optgroup>
-              <optgroup label="Wash and wipe">
-                <option value=6>Wiper Arms and Blades</option>
-                <option value=7>Wiper blade</option>
-              </optgroup>
-            </select>
-          </div>
-        </div>
+        <button class="search-vehicle-btn">
+          <span class="text-desktop">SEARCH FOR A NEW VEHICLE ></span>
+          <span class="text-tab d-none">> Search for a new vehicle</span>
+        </button>
       </div>
     </div>
   </div>
-  <div class="banner">
+  <div class="banner parent-category-banner">
     <img src="assets/images/reg-finder.png" alt="reg finder poster" class="mw-100 d-md-inline d-none" />
     <img src="assets/images/reg-finder-mobile.png" alt="reg finder poster" class="w-100 d-md-none d-block" />
   </div>
@@ -1100,81 +1064,24 @@
     </div>
     <!--main-body-->
     <div id="mainContainer" class="w-100">
-      <!-- more info cards -->
-      <div class="more-info row mt-4 py-4">
-        <div class="col-12 col-lg-4 more-info-cards d-flex">
-          <div class="w-50">
-            <h3>
-              &nbsp;Join our&nbsp;
-            </h3>
-            <h3>
-              &nbsp;newsletter&nbsp;
-            </h3>
-            <p>Be the first to find out
-              about our special off
-              Be the first to find out</p>
-            <button class="info-btn">MORE INFO ></button>
+
+      <!--Braking-->
+      <div class="braking-container mt-2">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="hr-line"></div>
+          <span class="feature-heading">Braking</span>
+          <div class="hr-line"></div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="assets/images/braking.png" alt="braking">
+          <div class="parent-category-info">
+            <span>Having a fully functioning braking system is critical for keeping you safe when driving. We stock a range of</span>
+            <span class="braking-text">high-quality car braking parts from discs and drums to handbrake cables and more.
+            With a variety of brands to choose from, you are more likely to find the parts you need from us than any other supplier.</span><br>
+            <div class="d-flex d-sm-none justify-content-center">
+              <button class="expand-btn" onclick="expandDiv()"><span class="material-symbols-outlined">expand_more</span></button>
+            </div>
           </div>
-          <img src="assets/images/mi-mail.png" alt="newsletter image" class="w-50 p-2">
-        </div>
-        <div class="col-4 more-info-cards d-lg-flex d-none">
-          <div class="w-50">
-            <h3>
-              &nbsp;20% off&nbsp;
-            </h3>
-            <h3>
-              &nbsp;on all parts&nbsp;
-            </h3>
-            <p>Be the first to find out
-              about our special off
-              Be the first to find out</p>
-            <button class="info-btn">MORE INFO ></button>
-          </div>
-          <img src="assets/images/mi-pricetag.png" alt="parts image" class="w-50 p-2">
-        </div>
-        <div class="col-4 more-info-cards d-lg-flex d-none">
-          <div class="w-50">
-            <h3>
-              &nbsp;We check&nbsp;
-            </h3>
-            <h3>
-              &nbsp;fitment&nbsp;
-            </h3>
-            <p>Be the first to find out
-              about our special off
-              Be the first to find out</p>
-            <button class="info-btn">MORE INFO ></button>
-          </div>
-          <img src="assets/images/mi-fitment.png" alt="fitment photo" class="w-50 p-2">
-        </div>
-      </div>
-      <!-- find out more section -->
-      <div class="findout-more py-4 d-flex justify-content-around flex-wrap">
-        <div class="find-card" style="background: url(assets/images/parts.jpg) no-repeat center/cover;">
-          <h3>200,000
-            parts</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/chat.jpg) no-repeat center/cover;">
-          <h3>Chat
-            with us</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/delivery.jpg) no-repeat center/cover;">
-          <h3>Free
-            delivery</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/rate.jpg) no-repeat center/cover;">
-          <h3>5-star
-            rating</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card d-none d-xxl-flex"
-          style="background: url(assets/images/head.jpg) no-repeat center/cover;">
-          <h3>Heading
-            here</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
         </div>
       </div>
 
@@ -1185,199 +1092,118 @@
           <span class="heading">Featured categories</span>
           <div class="hr-line"></div>
         </div>
-        <div class="d-flex justify-content-between mb-3">
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/clutch-part.png" alt="Clutch Parts">
-            <span class="feature-name">Clutch Parts</span>
+        <div class="feature-container-details">
+          <div class="d-flex justify-content-between mb-3">
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/brake-disc.png" alt="Brake Disc">
+              <span class="feature-name">Brake disc</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/brake-drums.png" alt="Brake Drums">
+              <span class="feature-name">Brake drums</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/brake-hoses.png" alt="Brake hoses">
+              <span class="feature-name">Brake hoses</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/brake-pads.png" alt="Brake Pads">
+              <span class="feature-name">Brake pads</span>
+            </div>
           </div>
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/braking.png" alt="Braking">
-            <span class="feature-name">Braking</span>
-          </div>
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/engine-parts.png" alt="Engine Parts">
-            <span class="feature-name">Engine Parts</span>
-          </div>
-          <div class="feature feature-last d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/ignition.png" alt="Ignition">
-            <span class="feature-name">Ignition</span>
+          <div class="d-flex justify-content-between">
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/brake-shoes.png" alt="Brake shoes">
+              <span class="feature-name">Brake shoes</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/calipers.png" alt="Calipers">
+              <span class="feature-name">Calipers</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/handbrake-cable.png" alt="Handbrake cables">
+              <span class="feature-name">Handbrake cables</span>
+            </div>
+            <div class="feature d-flex flex-column align-items-center">
+              <img class="feature-img" src="assets/images/wheel-cylinder.png" alt="Wheel cylinders">
+              <span class="feature-name">Wheel cylinders</span>
+            </div>
           </div>
         </div>
-        <div class="d-flex justify-content-between">
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/exhaust.png" alt="Exhaust">
-            <span class="feature-name">Exhaust</span>
+        <!--For mobile-->
+        <div class="d-none flex-column feature-mobile">
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Brake disc ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-disc-mobile.png" alt="Brake Disc">
           </div>
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/wash-wipe.png" alt="Wash & wipe">
-            <span class="feature-name">Wash & wipe</span>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Brake drums ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-drums-mobile.png" alt="Brake Drums">
           </div>
-          <div class="feature d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/steering-and-suspension.png" alt="Steering and suspension">
-            <span class="feature-name">Steering and suspension</span>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Brake hoses ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-hoses-mobile.png" alt="Brake hoses">
           </div>
-          <div class="feature feature-last d-flex flex-column align-items-center">
-            <img class="feature-img" src="assets/images/lighting.png" alt="Lighting">
-            <span class="feature-name">Lighting</span>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Brake pads ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-pads-mobile.png" alt="Brake Pads">
+          </div>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Brake shoes ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-shoes-mobile.png" alt="Brake shoes">
+          </div>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Calipers ></span>
+            <img class="feature-mobile-img" src="assets/images/calipers-mobile.png" alt="Calipers">
+          </div>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Handbrake cables ></span>
+            <img class="feature-mobile-img" src="assets/images/handbrake-cable-mobile.png" alt="Handbrake cables">
+          </div>
+          <div class="feature d-flex justify-content-between align-items-center mb-2">
+            <span class="feature-name">Wheel cylinders ></span>
+            <img class="feature-mobile-img" src="assets/images/brake-pads-mobile.png" alt="Wheel cylinder">
           </div>
         </div>
       </div>
 
-      <!-- find out more section -->
-      <div class="findout-more py-4 d-flex justify-content-around flex-wrap">
-        <div class="find-card" style="background: url(assets/images/price.jpg) no-repeat center/cover;">
-          <h3>Competitive
-            prices</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/reviews.jpg) no-repeat center/cover;">
-          <h3>Trusted
-            Reviews</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/payment.jpg) no-repeat center/cover;">
-          <h3>Secure
-            payments</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card" style="background: url(assets/images/return.jpg) no-repeat center/cover;">
-          <h3>Simple
-            returns</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-        <div class="find-card d-none d-xxl-flex"
-          style="background: url(assets/images/advice.jpg) no-repeat center/cover;">
-          <h3>Fitment
-            advice</h3>
-          <button class="info-btn find-out">FIND OUT MORE ></button>
-        </div>
-      </div>
-
-      <!-- Service parts section -->
-      <div class="service-parts">
+      <!--More categories-->
+      <div class="more-categories-container mt-3">
         <div class="body-heading d-flex align-items-center justify-content-center mb-4">
           <div class="hr-line"></div>
-          <span class="heading">Service parts</span>
+          <span class="heading">More categories</span>
           <div class="hr-line"></div>
         </div>
-        <div class="row">
-          <div class="parts">
-            <img src="assets/images/oil-filters.png" alt="Oil filters">
-            <p>Oil filters</p>
+        <div class="d-flex more-category-inner-container justify-content-between">
+          <div class="d-flex more-category flex-column me-2">
+            <div class="more-category-info">ABS sensor <span class="orange">></span></div>
+            <div class="more-category-info">Accessories & Fitting Kits <span class="orange">></span></div>
+            <div class="more-category-info">Brake Cables <span class="orange">></span></div>
           </div>
-          <div class="parts">
-            <img src="assets/images/wipers.png" alt="Wipers">
-            <p>Wipers</p>
+          <div class="d-flex more-category flex-column me-2">
+            <div class="more-category-info">Brake Cleaner <span class="orange">></span></div>
+            <div class="more-category-info">Brake Fluids <span class="orange">></span></div>
+            <div class="more-category-info">Brake Pad Wear Sensors <span class="orange">></span></div>
           </div>
-          <div class="parts">
-            <img src="assets/images/brake-pads.png" alt="Brake pads">
-            <p>Brake pads</p>
+          <div class="d-flex more-category flex-column me-2">
+            <div class="more-category-info">Brake Pipe Unions <span class="orange">></span></div>
+            <div class="more-category-info">Brake Sets Discs & Pads <span class="orange">></span></div>
+            <div class="more-category-info">Braking Miscellaneous <span class="orange">></span></div>
           </div>
-          <div class="parts">
-            <img src="assets/images/brake-discs.png" alt="Brake discs">
-            <p>Brake discs</p>
+          <div class="d-flex more-category flex-column me-2">
+            <div class="more-category-info">Master Cylinders <span class="orange">></span></div>
+            <div class="more-category-info">Other Brake Hydraulics <span class="orange">></span></div>
+            <div class="more-category-info">Pressure Regulator <span class="orange">></span></div>
           </div>
-          <div class="parts">
-            <img src="assets/images/brake-calipers.png" alt="Brake calipers">
-            <p>Brake calipers</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Latest news section -->
-      <div class="latest-news">
-        <div class="body-heading d-flex align-items-center justify-content-center mb-4">
-          <div class="hr-line"></div>
-          <span class="heading">Latest news</span>
-          <div class="hr-line"></div>
-        </div>
-        <div class="row">
-          <div class="news">
-            <span>Stock up on essential parts for
-              the MOT season</span>
-            <div class="d-flex py-3">
-              <img src="assets/images/news1.jpg" alt="news1">
-              <div class="px-2">
-                <p class="m-0">With 60 percent of MOTs taking place in the second half of the year, it’s time to...
-                  thinking...</p><button class="info-btn w-100">READ MORE ></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <span>PartsinMotion.co.uk unveils NAPA
-              dispensing stand for technicians</span>
-            <div class="d-flex py-3">
-              <img src="assets/images/news2.jpg" alt="news2">
-              <div class="px-2">
-                <p class="m-0">Garages and service centres should prepare for the MOT season with NAPA’s...</p><button
-                  class="info-btn w-100">READ MORE ></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <span>Online growth continues in
-              aftermarket: PartsInMotion.co.uk</span>
-            <div class="d-flex py-3">
-              <img src="assets/images/news3.jpg" alt="news3">
-              <div class="px-2">
-                <p class="m-0">Online motor factor, PartsInMotion.co.uk, has experienced significant website...</p><button
-                  class="info-btn w-100">READ MORE ></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--About us && Follow us-->
-      <div class="about-and-follow d-flex flex-row">
-        <div class="about-us-container me-3">
-          <div class="d-flex align-items-center mb-4">
-            <div class="hr-line"></div>
-            <span class="feature-heading">About us</span>
-            <div class="hr-line"></div>
-          </div>
-          <div class="d-flex justify-content-center">
-            <span class="about-text me-2">
-              At Parts in Motion we have a simple ethos, which is to provide great products at great prices with
-              industry
-              leading customer service and fitment experts. We offer a wide range of car parts to keep you on the road
-              at affordable prices.
-              We are proud to be one of the largest online car parts businesses in the UK. <br>We pass on the savings we
-              get through the scale
-              of our operations directly to you. We have delivered over a million high quality car parts at great price
-              since we started in 2013, read our
-              reviews here. You are the most important part of our business and at the centre of the way we do things.
-            </span>
-            <span class="about-text last-column">
-              We are proud to be one of the largest online car parts businesses in the UK.
-              We pass on the savings we get through the scale of our operations directly to you.<br> We have delivered
-              over a million high quality car parts at great price since we started in 2013, read our
-              reviews here. You are the most important part of our business and at the centre of the way we do things.We
-              continually strive to improve and become your preferred choice for all purchases. We are proud to be one
-              of the largest online car parts businesses in the UK.
-              <br>We pass on the savings we get through the scale of our operations directly to you.
-            </span>
-          </div>
-        </div>
-        <div class="follow-us-container">
-          <div class="d-flex align-items-center mb-4">
-            <div class="hr-line"></div>
-            <span class="feature-heading">Follow us</span>
-            <div class="hr-line"></div>
-          </div>
-          <div class="iframe-container d-flex justify-content-center">
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/partsinmotion.co.uk/&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              width="350" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <div class="d-flex more-category flex-column">
+            <div class="more-category-info">Servos <span class="orange">></span></div>
+            <div class="more-category-info remove-border">Vacuum Pumps <span class="orange">></span></div>
           </div>
         </div>
       </div>
 
       <!--Feature brand-->
-      <div class="feature-brand mt-4">
+      <div class="feature-brand parent-category-feature-brand mt-4">
         <div class="d-flex align-items-center justify-content-center mb-4">
           <div class="hr-line"></div>
           <span class="feature-heading">Featured brands</span>
@@ -1414,6 +1240,36 @@
               <img class="hexagon-img" src="assets/images/blueprint.svg" alt="blueprint logo">
             </span>
           </div>
+        </div>
+      </div>
+
+      <!-- find out more section -->
+      <div class="findout-more d-none parent-category-find-out-more py-4 justify-content-around flex-wrap">
+        <div class="find-card" style="background: url(assets/images/reviews.jpg) no-repeat center/cover;">
+          <h3>Trusted
+            Reviews</h3>
+          <button class="info-btn">FIND OUT MORE ></button>
+        </div>
+        <div class="find-card" style="background: url(assets/images/price.jpg) no-repeat center/cover;">
+          <h3>Competitive
+            prices</h3>
+          <button class="info-btn">FIND OUT MORE ></button>
+        </div>
+        <div class="find-card" style="background: url(assets/images/payment.jpg) no-repeat center/cover;">
+          <h3>Secure
+            payments</h3>
+          <button class="info-btn">FIND OUT MORE ></button>
+        </div>
+        <div class="find-card" style="background: url(assets/images/return.jpg) no-repeat center/cover;">
+          <h3>Simple
+            returns</h3>
+          <button class="info-btn">FIND OUT MORE ></button>
+        </div>
+        <div class="find-card d-none d-xxl-flex"
+             style="background: url(assets/images/advice.jpg) no-repeat center/cover;">
+          <h3>Fitment
+            advice</h3>
+          <button class="info-btn">FIND OUT MORE ></button>
         </div>
       </div>
 
@@ -1690,67 +1546,6 @@
         <input class="footer-input" placeholder="First name">
         <input class="footer-input" placeholder="Email address">
         <button class="footer-button">Subscribe</button>
-      </div>
-    </div>
-
-    <div class="footer-light-black-container align-items-center d-flex flex-column">
-      <span class="footer-heading">Parts In Motion</span>
-      <span class="fs-6 text-center">Great product, great prices, exceptional services</span>
-    </div>
-
-    <div class="footer-bottom-container">
-      <div class="container d-flex footer-container justify-content-between">
-        <div class="about-container d-flex flex-column w-25 me-5">
-          <div class="d-flex flex-column">
-            <span class="heading">ABOUT US</span>
-            <span class="information">At Parts in Motion we have a simple ethos, which is to provide great products at
-              great prices with industry leading customer services.</span>
-          </div>
-          <div class="d-flex flex-column">
-            <span class="heading">CUSTOMER FEEDBACK</span>
-            <span class="information"><i>"Good service, quick delivery and parts arrived very well packed, would
-                recommend"</i> Tony P, North Yorkshire</span>
-          </div>
-        </div>
-        <div class="links-container d-flex flex-column w-25 me-4">
-          <span class="heading">ADDITIONAL LINKS</span>
-          <a>Website feedback form</a>
-          <a>Returns</a>
-          <a>About us</a>
-          <a>Careers with us</a>
-          <a>Contact us</a>
-          <a>Delivery info</a>
-          <a>Terms and Conditions</a>
-          <a>Privacy Policy</a>
-          <a>Cookies Policy</a>
-          <a>Manage your account</a>
-          <a>Credible Range</a>
-          <a>COVID-19 FAQ</a>
-        </div>
-
-        <div class="secure-payment-container d-flex flex-column w-25 me-4">
-          <span class="heading">SECURE PAYMENTS</span>
-          <span class="information">Your payments are always secure when using our encrypted payments system</span>
-          <img src="assets/images/secure_payments.png" alt="paypal">
-
-        </div>
-
-        <div class="question-container d-flex flex-column w-25">
-          <span class="heading">HAVE A QUESTION?</span>
-          <div class="d-flex align-items-center chat-container">
-            <span class="mb-0">If you have a question about our parts or anything else please click here to contact
-              us.</span>
-            <img src="assets/images/have_question.gif" alt="Have Question">
-          </div>
-          <div class="d-flex justify-content-center">
-            <img class="mt-4 tec-logo" src="assets/images/tecdoc.png" alt="TechAlliance-logo">
-          </div>
-        </div>
-
-      </div>
-      <div class="container text-center pt-3">
-        <span>Automation Factors Ltd - Trading as Parts in Motion. All Rights Reserved 2022 |
-          <a class="mail" href="mailto:info@partsinmotion.co.uk">info@partsinmotion.co.uk</a></span>
       </div>
     </div>
   </div>

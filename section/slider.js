@@ -17,8 +17,11 @@ let fluid = function() {
   const element = $(".find-out");
   if ($(window).width() <= 576) {
     element.html('MORE INFO >');
+    $('.braking-text').hide();
   } else{
     element.html('FIND OUT MORE >');
+    $('.braking-text').show();
+    $('#searchDropdown').hide();
   }
 };
 
@@ -28,4 +31,12 @@ fluid();
 // Fire upon resize
 $(window).resize(fluid);
 
-
+function expandDiv(){
+  if($(".braking-text").is(":visible")){
+    $('.braking-text').hide();
+    $('.expand-btn').css('transform' ,'rotate(0deg)');
+  } else{
+    $('.braking-text').show();
+    $('.expand-btn').css('transform' ,'rotate(180deg)');
+  }
+}
