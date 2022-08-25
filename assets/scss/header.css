@@ -106,6 +106,11 @@
   width: 100%;
   padding: 20px 0;
 }
+@media (max-width: 576px) {
+  .main-header .header-container {
+    padding: 5px 0 !important;
+  }
+}
 .main-header .header-container .search-login-container {
   display: flex;
   align-items: center;
@@ -239,7 +244,6 @@
   border: none;
   font-weight: 500;
   min-width: 170px !important;
-  width: 100% !important;
 }
 
 .select2-selection--multiple {
@@ -307,7 +311,6 @@
   display: flex;
   border: 1px solid #009fe3;
   border-radius: 4px;
-  min-width: 200px;
 }
 
 @media (max-width: 768px) {

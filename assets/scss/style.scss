@@ -10,6 +10,10 @@ body {
     white-space: nowrap;
 }
 
+.flex-basic{
+    flex-basis: 100%;
+}
+
 .slider-nav {
     display: flex;
     justify-content: space-between;
@@ -665,6 +669,192 @@ input.car-details:-ms-input-placeholder {
     }
 }
 
+.listing-category-container{
+    .hr-line{
+        border-bottom: 1px solid colours.$border-line;
+        width: 40%;
+        margin: 18px 0;
+    }
+    .feature-heading{
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin: 0 5px;
+    }
+    .listing-car-details{
+        position: relative;
+        top: -50px;
+        left: -56px;
+        color: colours.$green;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+    }
+    .hexagon-check{
+        width: 30px;
+    }
+}
+
+.listing-heading{
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: colours.$about-text;
+    padding: 0;
+}
+
+.subcategories-container{
+    .sub-category-heading{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .sub-category-info{
+        color: colours.$blue;
+        line-height: 28px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .orange{
+        color: colours.$orange;
+    }
+
+}
+
+.sort-container{
+    .result-text{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px 0;
+    }
+    .sort-button{
+        font-weight: 600;
+        border: 2px solid colours.$orange !important;
+        background: none;
+        border-radius: 7px;
+        margin: 0 10px;
+        max-width: 174px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .pages-btn{
+        background: colours.$orange;
+        border: none;
+        max-width: 50px;
+        border-radius: 3px;
+        margin: 0 5px;
+        color: colours.$white;
+    }
+}
+
+.product-list-container{
+    .item-container{
+        border-bottom: 1px solid colours.$border-line;
+        padding-bottom: 20px;
+        margin: 20px 0;
+    }
+    .product-name{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .product-img{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .only-text{
+        font-size: 17px;
+        font-weight: 600;
+        color: colours.$about-text;
+    }
+    .price-value{
+        font-size: 30px;
+        color: black;
+        font-weight: 800;
+        line-height: 24px;
+    }
+    .more-info-btn{
+        padding: 8px 0;
+        background-color: #fa9705;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        max-width: 64px;
+        line-height: 17px;
+    }
+    .add-to-basket{
+        max-width: 120px!important;
+        padding: 8px;
+        text-align: left;
+    }
+    .basket-icon{
+        font-size: 33px !important;
+    }
+    .part-number{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 12px 0 4px;
+        color: colours.$about-text;
+    }
+    .part-number-tab{
+        font-weight: 600;
+        font-size: 14px;
+        color: colours.$about-text;
+    }
+    .company-logo{
+        max-width: 160px;
+    }
+    .about-heading{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .product-available-info,.product-available-info-mobile{
+        margin: 10px 0;
+        background: colours.$product-info-warning;
+        color: colours.$white;
+        padding: 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .product-info-success{
+        background: colours.$product-info-success !important;
+    }
+    .product-info-danger{
+        background: colours.$product-info-danger !important;
+    }
+    .table-row-info{
+        border-bottom: 1px solid colours.$border-line;
+        font-size: 16px;
+    }
+    .table-row-info:nth-last-child(-n+1){
+        border-bottom: none !important;
+    }
+    .product-list-more-info{
+        border-bottom: 1px solid colours.$border-line;
+    }
+    .pagination-btn{
+        border: 1px solid colours.$orange;
+        background: colours.$orange;
+        color: white;
+        border-radius: 5px;
+        margin: 0 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .pagination-btn-active{
+        background: none;
+        color: black;
+    }
+}
+
+.product-description-container{
+    border-bottom: 1px solid colours.$border-line;
+    padding-bottom: 25px;
+    .product-description{
+        font-size: 14px;
+        color: colours.$about-text;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .news {
         flex: 100%;
@@ -696,6 +886,25 @@ input.car-details:-ms-input-placeholder {
             text-align: left;
         }
     }
+    .product-list-container{
+        .item-container{
+            flex-direction: column !important;
+        }
+        .item-details{
+            margin-top: 20px;
+        }
+        .part-number, .about-product-company, .product-list-more-info{
+            display: none !important;
+        }
+        .part-number-tab{
+            display: flex !important;
+        }
+    }
+    .product-description-container{
+        .product-description{
+            display: inline !important;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -719,7 +928,8 @@ input.car-details:-ms-input-placeholder {
     .feature-last,
     .mobile-hide,
     #sideMenu ,
-    .dropdown-container{
+    .dropdown-container,
+    .column-hide{
         display: none !important;
     }
     .links-container,
@@ -785,13 +995,21 @@ input.car-details:-ms-input-placeholder {
     .parent-banner{
         flex-direction: column !important;
     }
+    .sort-container{
+        .sort-button{
+            margin: 0 4px !important;
+            max-width: 123px !important;
+        }
+    }
+
 }
 @media screen and (max-width: 576px) {
     .last-column,
     .braking-text,
     .feature-container-details,
     .parent-category-feature-brand,
-    .parent-category-banner{
+    .parent-category-banner,
+    .footer-product-listing{
         display: none;
     }
     .about-text{
@@ -869,5 +1087,42 @@ input.car-details:-ms-input-placeholder {
             line-height: 23px;
             margin: 7px 0;
         }
+    }
+
+    .listing-category-container{
+        .listing-car-details{
+            position: unset !important;
+            top: 0;
+            left: 0;
+        }
+        .category-img{
+            display: none;
+        }
+        .category-img-mobile{
+            display: block !important;
+        }
+    }
+
+    .product-list-container{
+        .item-details{
+            display: none !important;
+        }
+        .product-available-info-mobile{
+            display: flex !important;
+        }
+        .product-available-info{
+            display: none !important;
+        }
+        .pagination-btn{
+            margin: 0 5px !important;
+        }
+    }
+
+    .product-list-info{
+        display: flex !important;
+        border-top: 1px solid colours.$border-line;
+    }
+    .product-description-container{
+        display: none !important;
     }
 }

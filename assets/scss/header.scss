@@ -104,6 +104,9 @@
       justify-content: space-between;
       width: 100%;
       padding: 20px 0;
+      @media (max-width: 576px) {
+        padding: 5px 0 !important;
+      }
       .search-login-container{
         display: flex;
         align-items: center;
@@ -241,7 +244,6 @@
   border: none;
   font-weight: 500;
   min-width: 170px !important;
-  width: 100% !important;
 }
 
 .select2-selection--multiple{
@@ -313,7 +315,6 @@
     display: flex;
     border: 1px solid colours.$blue;
     border-radius: 4px;
-    min-width: 200px;
   }
 }
 
