@@ -320,99 +320,62 @@
     </div>
 
     <!--banner-->
-    <div class="bg-blue">
-        <div class="container">
-            <div class="row py-2 align-items-center flex-wrap">
-                <div class="col-xxl-2 col-md-4 col-sm-12">
-                    <div class="pointer-shape">
-                        <a class="pointer-shape-text" data-slide-index="1" href="">
-                            Use the reg finder to find
-                            <span class="mobile-hide">correct</span> parts for your car
-                        </a>
-                        <div class="pointer-shape-arrow"></div>
-                    </div>
-                </div>
-
-                <div class="col-xxl-3 col-md-5 col-sm-12 py-xxl-0 py-md-3">
-                    <div class="reg-field">
-                        <div class="px-2 py-1">
-                            <img src="assets/images/UK-flag.svg" alt="ek flag" />
-                            <span>GB</span>
-                        </div>
-                        <input class="inputField w-100" placeholder="Enter reg here" />
-                        <button type="submit" class="px-4">GO</button>
-                    </div>
-                </div>
-                <div class="car-details col-12 col-xxl-7 d-flex justify-content-start align-items-center">
-                    <div class="pointer-shape me-5">
-                        <a class="pointer-shape-text d-md-block d-none" data-slide-index="1" href="">Or enter
-                            car details
-                        </a>
-                        <a class="pointer-shape-text d-md-none d-block" data-slide-index="1" href="">
-                            Or click here to search for your vehicle >
-                        </a>
-                        <div class="pointer-shape-arrow"></div>
-                    </div>
-                    <div class="d-flex dropdown-container">
-                        <div class="me-2">
-                            <select id='carMake' class="ms-2">
-                                <option></option>
-                                <optgroup label="Braking">
-                                    <option value=1>Brake discs</option>
-                                    <option value=2>Brake Drums</option>
-                                    <option value=3>Brake Hoses</option>
-                                </optgroup>
-                                <optgroup label="Engine Parts">
-                                    <option value=4>Oil sensor and switches</option>
-                                    <option value=5>Sump Plugs and Washer</option>
-                                </optgroup>
-                                <optgroup label="Wash and wipe">
-                                    <option value=6>Wiper Arms and Blades</option>
-                                    <option value=7>Wiper blade</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="me-2">
-                            <select id='carModel'>
-                                <option></option>
-                                <optgroup label="Braking">
-                                    <option value=2>Brake Drums</option>
-                                    <option value=3>Brake Hoses</option>
-                                </optgroup>
-                                <optgroup label="Engine Parts">
-                                    <option value=4>Oil sensor and switches</option>
-                                    <option value=5>Sump Plugs and Washer</option>
-                                </optgroup>
-                                <optgroup label="Wash and wipe">
-                                    <option value=6>Wiper Arms and Blades</option>
-                                    <option value=7>Wiper blade</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <select id='carEngine'>
-                            <option></option>
-                            <optgroup label="Braking">
-                                <option value=3>Brake Hoses</option>
-                                <option value=1>Brake discs</option>
-                                <option value=2>Brake Drums</option>
-                            </optgroup>
-                            <optgroup label="Engine Parts">
-                                <option value=4>Oil sensor and switches</option>
-                                <option value=5>Sump Plugs and Washer</option>
-                            </optgroup>
-                            <optgroup label="Wash and wipe">
-                                <option value=6>Wiper Arms and Blades</option>
-                                <option value=7>Wiper blade</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </div>
-            </div>
+    <div class="car-details-mobile-container d-none">
+        <div class="container d-flex flex-column">
+          <div class="car-details-main-row">Nissan Quashqai</div>
+          <table>
+            <tr class="car-details-main-row car-details-row">
+              <td class="light-grey">VARIANT</td>
+              <td>Mk2 (J11) 2013 Hatchback</td>
+            </tr>
+            <tr class="car-details-main-row car-details-row">
+              <td class="light-grey">TYPE</td>
+              <td>DCI Tekna</td>
+            </tr>
+            <tr class="car-details-main-row car-details-row">
+              <td class="light-grey">ENGINE</td>
+              <td>1461CCM 108HP 81KW(Diesel)</td>
+            </tr>
+          </table>
+          <div class="car-details-text">We're only showing parts that fit this vehicle</div>
         </div>
-    </div>
-    <div class="banner">
+      </div>
+      <div class="bg-blue">
+        <div class="container">
+          <div class="d-flex parent-banner justify-content-between align-items-center">
+            <div class="d-flex banner-container flex-wrap">
+              <div class="d-none banner-info ps-2">We are only showing parts that fit this vehicle</div>
+              <div class="d-flex">
+              <div class="banner-chip m-1">
+                <span class="banner-text">YOUR CAR:</span>
+                <span class="banner-res">Nissan Quashqai</span>
+              </div>
+              <div class="banner-chip m-1">
+                <span class="banner-text">VARIANT:</span>
+                <span class="banner-res">Mk2 (J11) 2013 Hatchback</span>
+              </div>
+              </div>
+              <div class="d-flex">
+              <div class="banner-chip m-1">
+                <span class="banner-text">TYPE:</span>
+                <span class="banner-res">DCI Tekna</span>
+              </div>
+              <div class="banner-chip m-1">
+                <span class="banner-text">ENGINE:</span>
+                <span class="banner-res">1461CCM 108HP 81KW(Diesel)</span>
+              </div>
+              </div>
+            </div>
+            <button class="search-vehicle-btn">
+              <span class="text-desktop">SEARCH FOR A NEW VEHICLE ></span>
+              <span class="text-tab d-none">> Search for a new vehicle</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    <div class="banner banner-listings">
         <img src="assets/images/listings-banner.png" alt="reg finder poster" class="mw-100 d-md-inline d-none" />
-        <img src="assets/images/reg-finder-mobile.png" alt="reg finder poster" class="w-100 d-md-none d-block" />
+        <img src="assets/images/listings-banner.png" alt="reg finder poster" class="w-100 d-md-none d-block" />
     </div>
 
     <div class="container d-flex">
