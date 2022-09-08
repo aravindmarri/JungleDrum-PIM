@@ -700,6 +700,9 @@ input.car-details:-ms-input-placeholder {
         list-style-type: none;
         padding: 0;
         font-size: 16px;
+        li{
+            border-bottom: 1px solid #c8c9ca;
+        }
     }
 
     hr {
