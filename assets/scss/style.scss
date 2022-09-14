@@ -1,14 +1,14 @@
 /** *
  [1. Imports & Use] 
  */
- /******************************************************************************/
+/******************************************************************************/
 @use "colours";
 
 
 /** * 
 [2. Variables declaration]
  */
- /******************************************************************************/
+/******************************************************************************/
 $bannger-bg: '../images/banner-bg.png';
 $expand_more_orange: '../images/expand_more_orange.svg';
 
@@ -396,7 +396,7 @@ input.car-details:-ms-input-placeholder {
 .body-heading {
     .hr-line {
         border-bottom: 1px solid colours.$border-line;
-        width: 40%;
+        width: 44%;
     }
 
     .heading {
@@ -582,6 +582,7 @@ input.car-details:-ms-input-placeholder {
 
     .sub-categories-bottom {
         flex-wrap: wrap;
+
         p {
             margin-bottom: 0;
         }
@@ -622,9 +623,10 @@ input.car-details:-ms-input-placeholder {
     }
 
     .more-info {
-        p{
-            margin:0;
+        p {
+            margin: 0;
         }
+
         color: colours.$white;
         font-size: 16px;
         margin: 0;
@@ -700,7 +702,8 @@ input.car-details:-ms-input-placeholder {
         list-style-type: none;
         padding: 0;
         font-size: 16px;
-        li{
+
+        li {
             border-bottom: 1px solid #c8c9ca;
         }
     }
@@ -715,7 +718,7 @@ input.car-details:-ms-input-placeholder {
         list-style-type: none;
         flex-wrap: wrap;
         justify-content: center;
-        padding:0;
+        padding: 0;
     }
 
     .prev-next {
@@ -752,8 +755,9 @@ input.car-details:-ms-input-placeholder {
         font-size: 16px;
     }
 }
-.more-info-second{
-    display:none !important;
+
+.more-info-second {
+    display: none !important;
 }
 
 .feature-brand {
@@ -912,6 +916,179 @@ input.car-details:-ms-input-placeholder {
     }
 }
 
+/* Products page */
+.cross-reference-parts {
+    .reference-parts-discription {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .reference-parts-cost {
+        font-size: 28px;
+        font-weight: 600;
+    }
+}
+
+.Products {
+
+    .more-info {
+        p {
+            margin: 0;
+        }
+
+        color: colours.$white;
+        font-size: 16px;
+        margin: 0;
+        padding: 6px 12px;
+        background-color: colours.$orange;
+        border-radius: 8px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    .addto-cart {
+        font-size: 44px;
+    }
+
+    .right-expander {
+        font-size: 16px;
+        color: colours.$orange;
+    }
+
+    .checkout-expander {
+        font-size: 16px;
+        color: colours.$white;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 18px;
+        border-bottom: 1px solid colours.$border-line;
+    }
+
+    th,
+    td {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+
+    .orange-border {
+        border-right: 1px solid colours.$orange;
+    }
+
+    .shipping-services {
+        tr {
+            border-bottom: 1px solid colours.$black;
+        }
+    }
+
+    .product-info {
+        font-size: 23px;
+        color: colours.$blue;
+    }
+
+    .compatibility-success {
+        background-color: colours.$green;
+        font-size: 16px;
+        color: colours.$white;
+        padding: 4px;
+        gap: 10px;
+    }
+
+    .sub-info {
+        font-size: 18px;
+        color: colours.$blue;
+        line-height: 22px;
+    }
+
+    .product-info-text {
+        padding-left: 4%;
+        font-size: 18px;
+    }
+
+    .part-no-units {
+        font-size: 20px;
+    }
+
+    .info-lables {
+        font-size: 18px;
+    }
+
+    .cross-reference-parts {
+        .cross-reff-box {
+            padding-left: 10px !important;
+        }
+    }
+
+    .product-price {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .note-text {
+        font-size: 20px;
+    }
+
+    .quantity {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+    .stock-allert {
+        background-color: colours.$red;
+    }
+
+    .increment-decrement {
+        background-color: colours.$orange;
+        color: colours.$white;
+        height: 26px;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        font-size: 26px;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .carousel-indicators {
+        bottom: -50px;
+
+        [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: colours.$default;
+        }
+    }
+
+    .carousel-control-prev {
+        opacity: 1;
+        left: -25px;
+    }
+    .carousel-control-next{
+        opacity: 1;
+        right: -25px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: #fff !important;
+        padding: 40px 16px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+    }
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+        transform: rotate(180deg);
+    }
+
+}
+
 @media screen and (max-width: 1200px) {
 
     .find-card {
@@ -970,8 +1147,24 @@ input.car-details:-ms-input-placeholder {
         display: none !important;
     }
 
+    .products-more-info {
+        display: block !important;
+        display: flex !important;
+    }
+
     .brake-discs {
         flex-direction: column !important;
+    }
+
+    .cross-reff-box {
+        width: 49% !important;
+    }
+
+    .Products {
+        .product-left {
+            width: auto !important;
+            flex-direction: column !important;
+        }
     }
 }
 
@@ -1104,16 +1297,36 @@ input.car-details:-ms-input-placeholder {
     .parent-banner {
         flex-direction: column !important;
     }
-    .Product-Listings{
-        .bottom-box{
-            flex-direction: column-reverse!important;
+
+    .Product-Listings {
+        .bottom-box {
+            flex-direction: column-reverse !important;
         }
     }
-    .findout-more-listings{
-        display: flex!important;
+
+    .findout-more-listings {
+        display: flex !important;
     }
-    .more-info-second{
-        display: block!important;
+
+    .more-info-second {
+        display: block !important;
+    }
+
+    .Products {
+        .mobile-show {
+            display: block !important;
+            display: flex !important;
+        }
+
+        .mobile-hide {
+            display: none !important;
+        }
+
+        .basket-chesckout {
+            display: flex;
+            flex-direction: column !important;
+        }
+
     }
 }
 
@@ -1230,18 +1443,53 @@ input.car-details:-ms-input-placeholder {
         }
 
     }
-    .sub-categories{
-        .mobile-show{
+
+    .sub-categories {
+        .mobile-show {
             flex-direction: column !important;
         }
-        .vented{
+
+        .vented {
             padding: 0 !important;
         }
-        .mobile-hide{
+
+        .mobile-hide {
             display: none;
         }
     }
-    .banner-listings{
-        display: none!important;
+
+    .banner-listings {
+        display: none !important;
+    }
+
+    // products-page
+        .product-left{
+            .mobile-toggele-content-top{
+                display: none !important;
+            }
+            .mobile-toggele-content{
+                display:block!important;
+            }
+        }
+    .cross-reference-parts {
+        .cross-reff-box {
+            .cost-info {
+                display: flex !important;
+                flex-direction: column !important;
+
+                .info-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .feature-brand {
+        display: block !important;
+    }
+
+    .products-more-info,
+    .products-reviews {
+        display: none !important;
     }
 }
